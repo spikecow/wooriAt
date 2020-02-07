@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.9.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.wooriat</groupId>
+	<artifactId>officialweb</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>officialweb</name>
+	<packaging>war</packaging>
+	<description>WOORIAT OfficialWeb project for Spring Boot</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+
+		<timestamp>${maven.build.timestamp}</timestamp>
+		<maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
+
+		<buildstamp>${build.timestamp}</buildstamp>
+	</properties>
+	
+	 <!-- 스프링 마일스톤 repo -->
+	<repositories>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/libs-milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	
+	<dependencies>
+		
+		 <!-- 스프링 모바일 -->
+		<!-- https://mvnrepository.com/artifact/org.springframework.mobile/spring-mobile-starter -->
+		<dependency>
+			<groupId>org.springframework.mobile</groupId>
+			<artifactId>spring-mobile-device</artifactId>
+			<version>2.0.0.M3</version>
+		</dependency>
+
+  
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-mobile -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mobile</artifactId>
+			<version>1.5.22.RELEASE</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+<!--		<dependency>-->
+<!--			<groupId>com.github.gavlyukovskiy</groupId>-->
+<!--			<artifactId>p6spy-spring-boot-starter</artifactId>-->
+<!--			<version>1.5.7</version>-->
+<!--		</dependency>-->
+
+		<!-- S : JSP 쓰기 -->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+		<!-- E : JSP 쓰기 -->
+		
+		 <!-- S : Tiles -->
+		<dependency>
+			<groupId>org.apache.tiles</groupId>
+			<artifactId>tiles-core</artifactId>
+			<version>3.0.7</version>
+		</dependency>
+	
+		<dependency>
+			<groupId>org.apache.tiles</groupId>
+			<artifactId>tiles-servlet</artifactId>
+			<version>3.0.7</version>
+		</dependency>
+	
+		<dependency>
+			<groupId>org.apache.tiles</groupId>
+			<artifactId>tiles-jsp</artifactId>
+			<version>3.0.7</version>
+		</dependency>
+	
+		<dependency>
+			<groupId>org.apache.tiles</groupId>
+			<artifactId>tiles-el</artifactId>
+			<version>3.0.7</version>
+		</dependency>
+		<!-- E : Tiles -->
+
+		<!-- S : commons-langs -->
+		<!-- https://mvnrepository.com/artifact/commons-lang/commons-lang -->
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<!-- E : commons-langs -->
+		
+		<!-- S : aws file upload -->
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk</artifactId>
+			<version>1.11.66</version>
+		</dependency>
+		<!-- E : aws file upload -->
+		
+		<!-- S : mustache -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mustache</artifactId>
+		</dependency>
+		<!-- E : mustache -->
+		
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+		</dependency>
+	</dependencies>
+	
+	    <build>
+	        <plugins>
+	            <plugin>
+	                <groupId>org.springframework.boot</groupId>
+	                <artifactId>spring-boot-maven-plugin</artifactId>
+	            </plugin>
+
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>1.11</version>
+                    <executions>
+                        <execution>
+                            <id>timestamp-property</id>
+                            <goals>
+                                <goal>timestamp-property</goal>
+                            </goals>
+                            <configuration>
+                                <name>build.timestamp</name>
+                                <pattern>yyyyMMddHHmm</pattern>
+                                <timeZone>Asia/Seoul</timeZone>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+
+<!--				<plugin>-->
+<!--					<groupId>com.keyboardsamurais.maven</groupId>-->
+<!--					<artifactId>maven-timestamp-plugin</artifactId>-->
+<!--					<version>1.0</version>-->
+<!--					<executions>-->
+<!--						<execution>-->
+<!--							<phase>package</phase>-->
+<!--							<goals>-->
+<!--								<goal>create</goal>-->
+<!--							</goals>-->
+<!--						</execution>-->
+<!--					</executions>-->
+<!--				</plugin>-->
+	        </plugins>
+
+			<resources>
+				<resource>
+					<directory>src/main/resources</directory>
+					<filtering>true</filtering>
+				</resource>
+			</resources>
+
+	    </build>
+
+</project>

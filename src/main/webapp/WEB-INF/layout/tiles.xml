@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <!-- main -->
+    <definition name="main-layout" template="/WEB-INF/layout/layout-tiles.jsp">
+		<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+
+	<definition name="kr/*/*" extends="main-layout">
+		<put-attribute name="body" value="/WEB-INF/views/kr/{1}/{2}.jsp" />
+	</definition>
+
+
+
+	<definition name="main-en-layout" template="/WEB-INF/layout/layout-tiles-en.jsp">
+		<put-attribute name="header" value="/WEB-INF/layout/header-en.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer-en.jsp" />
+	</definition>
+
+	<definition name="en/*/*" extends="main-en-layout">
+		<put-attribute name="body" value="/WEB-INF/views/en/{1}/{2}.jsp" />
+	</definition>
+
+
+	<definition name="pcErrorLayout" template="/WEB-INF/error/pcKr/404.jsp">
+		<put-attribute name="contents"   value="" />
+	</definition>
+
+	<definition name="errorPc/kr" extends="pcErrorLayout">
+		<put-attribute name="contents"       value="/WEB-INF/error/pcKr/404.jsp" />
+	</definition>
+
+	<definition name="pcEnErrorLayout" template="/WEB-INF/error/pcEn/404.jsp">
+		<put-attribute name="contents"   value="" />
+	</definition>
+
+	<definition name="errorPc/en" extends="pcEnErrorLayout">
+		<put-attribute name="contents"       value="/WEB-INF/error/pcEn/404.jsp" />
+	</definition>
+
+<!--	<definition name="*/*" extends="main-layout">-->
+<!--		<put-attribute name="body" value="/WEB-INF/views/kr/{1}/{2}.jsp" />-->
+<!--	</definition>-->
+
+	<!-- <definition name="*/*/*" extends="main-layout">
+		<put-attribute name="body" value="/WEB-INF/views/{1}/{2}/{3}.jsp" />
+	</definition> -->
+	
+</tiles-definitions>

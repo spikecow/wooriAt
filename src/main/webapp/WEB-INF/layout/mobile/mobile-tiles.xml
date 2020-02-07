@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <!-- mobile -->
+    <definition name="mobile-main-layout" template="/WEB-INF/layout/mobile/mobile-layout-tiles.jsp">
+		<put-attribute name="header" value="/WEB-INF/layout/mobile/mobile-header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/layout/mobile/mobile-footer.jsp" />
+	</definition>
+	
+	<definition name="mobile/kr/*/*" extends="mobile-main-layout">
+		<put-attribute name="body" value="/WEB-INF/views/kr/mobile/{1}/{2}.jsp" />
+	</definition>
+
+	<!-- mobile -->
+	<definition name="mobile-main-en-layout" template="/WEB-INF/layout/mobile/mobile-layout-tiles-en.jsp">
+		<put-attribute name="header" value="/WEB-INF/layout/mobile/mobile-header-en.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/layout/mobile/mobile-footer-en.jsp" />
+	</definition>
+
+	<definition name="mobile/en/*/*" extends="mobile-main-en-layout">
+		<put-attribute name="body" value="/WEB-INF/views/en/mobile/{1}/{2}.jsp" />
+	</definition>
+
+	<definition name="mblErrorLayout" template="/WEB-INF/error/mblKr/error.jsp">
+		<put-attribute name="contents"   value="" />
+	</definition>
+
+	<definition name="errorMbl/kr" extends="mblErrorLayout">
+		<put-attribute name="contents"       value="/WEB-INF/error/mblKr/error.jsp" />
+	</definition>
+
+	<definition name="mblEnErrorLayout" template="/WEB-INF/error/mblEn/error.jsp">
+		<put-attribute name="contents"   value="" />
+	</definition>
+
+	<definition name="errorMbl/en" extends="mblEnErrorLayout">
+		<put-attribute name="contents"       value="/WEB-INF/error/mblEn/error.jsp" />
+	</definition>
+
+<!--	<definition name="mobile/*/*/*" extends="mobile-main-layout">-->
+<!--		<put-attribute name="body" value="/WEB-INF/views/mobile/{1}/{2}/{3}.jsp" />-->
+<!--	</definition>-->
+	
+<!-- 	<definition name="mobile/*/*/*" extends="mobile-main-layout">
+		<put-attribute name="body" value="/WEB-INF/views/mobile/{1}/{2}/{3}.jsp" />
+	</definition>	 -->
+</tiles-definitions>
