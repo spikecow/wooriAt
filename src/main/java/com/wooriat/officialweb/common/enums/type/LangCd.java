@@ -1,6 +1,6 @@
 package com.wooriat.officialweb.common.enums.type;
 
-import com.wooriat.officialweb.common.enums.GsItemAdmEnum;
+import com.wooriat.officialweb.common.enums.WooriatEnum;
 
 /** ========================================================================================
  * @Package Name   : com.wooriat.admin.common.enums.type
@@ -14,7 +14,7 @@ import com.wooriat.officialweb.common.enums.GsItemAdmEnum;
  * 
  * ========================================================================================
  */
-public enum LangCd implements GsItemAdmEnum{
+public enum LangCd implements WooriatEnum {
 	
 	//언어코드
 	KR("KR","국문"),

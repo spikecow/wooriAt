@@ -12,7 +12,7 @@ package com.wooriat.officialweb.common.enums;
  * 
  * ========================================================================================
  */
-public interface GsItemAdmEnum {
+public interface WooriatEnum {
 	public String getValue();
 	public String getDescription();
 }
