@@ -1,4 +1,4 @@
-package com.gsitm.officialweb.config;
+package com.wooriat.officialweb.config;
 
 
 import java.util.List;
@@ -12,10 +12,10 @@ import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import com.gsitm.officialweb.common.interceptor.RequestInterceptor;
+import com.wooriat.officialweb.common.interceptor.RequestInterceptor;
 
 /** ========================================================================================
- * @Package Name   : com.gsitm.admin.config
+ * @Package Name   : com.wooriat.admin.config
  * @FileName  : WebMvcConfig.java
  * @Date      : 2019. 10. 15. 
  * @Author    : ose

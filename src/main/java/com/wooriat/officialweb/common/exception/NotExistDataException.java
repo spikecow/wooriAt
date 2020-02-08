@@ -1,4 +1,4 @@
-package com.gsitm.officialweb.common.exception;
+package com.wooriat.officialweb.common.exception;
 
 public class NotExistDataException extends RuntimeException {
     public NotExistDataException() {

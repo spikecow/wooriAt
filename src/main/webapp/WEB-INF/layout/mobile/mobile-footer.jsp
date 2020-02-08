@@ -21,7 +21,7 @@
 			<dt><a href="/reference/referenceInfo">REFERENCES</a></dt>
 			<dt><a href="/pr/list">PR</a></dt>
 			<dt><a href="/career/personnel">CAREERS</a></dt>
-			<dt><a href="/about/gsitm">ABOUT</a></dt>
+			<dt><a href="/about/wooriat">ABOUT</a></dt>
 		</dl>
 
 <%--		<dl>--%>
@@ -37,9 +37,9 @@
 <%--				{{/insdustryMenuResult}}--%>
 <%--		</dl>--%>
 		<ul class="footer_util">
-			<li><a href="https://www.facebook.com/GSITM/" target="_blank">FACEBOOK</a></li>
+			<li><a href="https://www.facebook.com/wooriat/" target="_blank">FACEBOOK</a></li>
 <%--			<li><a href="https://www.linkedin.com/company/gs-itm/about/" target="_blank">LINKED IN</a></li>--%>
-<%--			<li><a href="https://www.instagram.com/gsitm/?hl=ko" target="_blank">INSTAGRAM</a></li>--%>
+<%--			<li><a href="https://www.instagram.com/wooriat/?hl=ko" target="_blank">INSTAGRAM</a></li>--%>
 		</ul>
 	</article>
 

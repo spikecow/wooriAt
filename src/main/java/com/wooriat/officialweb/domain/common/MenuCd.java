@@ -1,4 +1,4 @@
-package com.gsitm.officialweb.domain.common;
+package com.wooriat.officialweb.domain.common;
 
 public enum MenuCd {
     SERVICE

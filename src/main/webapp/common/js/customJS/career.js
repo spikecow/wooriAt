@@ -1,1 +1,0 @@
-var param = {"langCd" : langCd }

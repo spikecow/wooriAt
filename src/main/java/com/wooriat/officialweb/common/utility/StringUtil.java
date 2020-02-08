@@ -1,4 +1,4 @@
-package com.gsitm.officialweb.common.utility;
+package com.wooriat.officialweb.common.utility;
 
 import java.text.DateFormat;
 import java.text.DecimalFormat;

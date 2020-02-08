@@ -1,7 +1,7 @@
-package com.gsitm.officialweb.common.enums;
+package com.wooriat.officialweb.common.enums;
 
 /** ========================================================================================
- * @Package Name   : com.gsitm.admin.common.enumFactory
+ * @Package Name   : com.wooriat.admin.common.enumFactory
  * @FileName  : Enum.java
  * @Date      : 2019. 10. 15. 
  * @Author    : ose

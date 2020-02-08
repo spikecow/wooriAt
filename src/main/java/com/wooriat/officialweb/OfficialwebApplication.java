@@ -1,4 +1,4 @@
-package com.gsitm.officialweb;
+package com.wooriat.officialweb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,9 +1,9 @@
-package com.gsitm.officialweb.common.enums.type;
+package com.wooriat.officialweb.common.enums.type;
 
-import com.gsitm.officialweb.common.enums.GsItemAdmEnum;
+import com.wooriat.officialweb.common.enums.GsItemAdmEnum;
 
 /** ========================================================================================
- * @Package Name   : com.gsitm.admin.common.enums.type
+ * @Package Name   : com.wooriat.admin.common.enums.type
  * @FileName  : LangCd.java
  * @Date      : 2019. 10. 15. 
  * @Author    : ose 

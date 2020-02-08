@@ -1,14 +1,14 @@
-package com.gsitm.officialweb.config;
+package com.wooriat.officialweb.config;
 
 
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.gsitm.officialweb.common.xssFilter.CrossScriptingFilter;
+import com.wooriat.officialweb.common.xssFilter.CrossScriptingFilter;
 
 /** ========================================================================================
- * @Package Name   : com.gsitm.admin.config
+ * @Package Name   : com.wooriat.admin.config
  * @FileName  : WebMvcConfig.java
  * @Date      : 2019. 10. 15. 
  * @Author    : ose

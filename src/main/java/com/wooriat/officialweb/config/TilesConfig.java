@@ -1,4 +1,4 @@
-package com.gsitm.officialweb.config;
+package com.wooriat.officialweb.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,7 +8,7 @@ import org.springframework.web.servlet.view.tiles3.TilesView;
 import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
 
 /** ========================================================================================
-* @Package Name   : com.gsitm.officialweb.config
+* @Package Name   : com.wooriat.officialweb.config
 * @FileName  : TilesConfig.java
 * @Date      : 2019. 10. 17.
 * @Author    : OSE

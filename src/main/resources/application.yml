@@ -12,27 +12,15 @@ spring:
 # local
 spring:
   profiles: local
-  aws:
-    s3:
-      bucket: image.gsitm.com
-      accesskey: AKIA5N7TAKETLDKZ22HO
-      secretKey: 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
-      sub-dir-name: /static
-    sns:
-      accesskey: AKIA5N7TAKETBU5DS3ON
-      secretKey: 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
-      topic:
-        sales: arn:aws:sns:ap-northeast-2:923390726438:Inquiry
-        inquiry: arn:aws:sns:ap-northeast-2:923390726438:Inquiry
   mvc:
     view:
       prefix: /WEB-INF/jsp/views/
       suffix: .jsp
   datasource:
-    url: jdbc:postgresql://112.217.179.250:25432/homedb
-    username: 'dbmaster'
-    password: '!dbmaster!'
-    driver-class-name: org.postgresql.Driver
+    url: jdbc:sqlserver://211.232.50.135:1433;databaseName=WOORIAT
+    username: "wooriat"
+    password: "woori_at_1234$#@!"
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
   jpa:
     hibernate:
       ddl-auto: update
@@ -54,27 +42,15 @@ logging:
 # dev
 spring:
   profiles: dev
-  aws:
-    s3:
-      bucket: image.gsitm.com
-      accesskey: AKIA5N7TAKETLDKZ22HO
-      secretKey: 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
-      sub-dir-name: /static
-    sns:
-      accesskey: AKIA5N7TAKETBU5DS3ON
-      secretKey: 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
-      topic:
-        sales: arn:aws:sns:ap-northeast-2:923390726438:Inquiry
-        inquiry: arn:aws:sns:ap-northeast-2:923390726438:Inquiry
   mvc:
     view:
       prefix: /WEB-INF/jsp/views/
       suffix: .jsp
   datasource:
-    url: [url]
-    username: [id]
-    password: [password]
-    driver-class-name: org.postgresql.Driver
+    url: jdbc:sqlserver://211.232.50.135:1433;databaseName=WOORIAT
+    username: "wooriat"
+    password: "woori_at_1234$#@!"
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
   jpa:
     hibernate:
       ddl-auto: update
@@ -94,18 +70,6 @@ logging:
 # prod
 spring:
   profiles: prod
-  aws:
-    s3:
-      bucket: image.gsitm.com
-      accesskey: AKIA5N7TAKETLDKZ22HO
-      secretKey: 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
-      sub-dir-name: /static
-    sns:
-      accesskey: AKIA5N7TAKETBU5DS3ON
-      secretKey: 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
-      topic:
-        sales: arn:aws:sns:ap-northeast-2:923390726438:gsitm-homepage-sns-topic-email
-        inquiry: arn:aws:sns:ap-northeast-2:923390726438:gsitm-homepage-sns-topic-email
   mvc:
     view:
       prefix: /WEB-INF/jsp/views/

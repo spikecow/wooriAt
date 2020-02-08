@@ -1,4 +1,4 @@
-package com.gsitm.officialweb.common.xssFilter;
+package com.wooriat.officialweb.common.xssFilter;
 
 import java.io.IOException;
 import javax.servlet.Filter;
@@ -11,11 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Component;
 
-import com.gsitm.officialweb.constant.GsItemConst;
-
 
 /** ========================================================================================
-* @Package Name   : com.gsitm.officialweb.common.xssFilter
+* @Package Name   : com.wooriat.officialweb.common.xssFilter
 * @FileName  : CrossScriptingFilter.java
 * @Date      : 2019. 10. 17.
 * @Author    : OSE
@@ -43,14 +41,14 @@ public class CrossScriptingFilter implements Filter {
 			FilterChain chain) throws IOException, ServletException {
 		
 		String path = ((HttpServletRequest) request).getServletPath();
-		if (path.equals(GsItemConst.LOGIN_URL)){
+		/*if (path.equals(GsItemConst.LOGIN_URL)){
 			// 필터기능 제외
 			 chain.doFilter(request, response);
 			 return;
-		}else{
+		}else{*/
 			// 필터
 			chain.doFilter(new RequestWrapper((HttpServletRequest) request),response);
-		}
+		//}
 		
 	}
 

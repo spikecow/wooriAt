@@ -84,7 +84,7 @@
 								<li>&middot; 개인정보 입력항목은 12개월간 보유함</li>
 								<li>&middot; 이름 및 이메일주소의 경우 고객문의내역 관리를 위하여 36개월간 보관함</li>
 								<li>&middot; 기타 개인정보의 경우 회원에게 개별적으로 사전 동의를 받아 보유함</li>
-								<li>&middot; 성명과 이메일 정보에 대하여 파기를 원하는 개인은 webmaster@gsitm.com으로 요청 주시면 바로 처리하겠습니다.</li>
+								<li>&middot; 성명과 이메일 정보에 대하여 파기를 원하는 개인은 webmaster@wooriat.com으로 요청 주시면 바로 처리하겠습니다.</li>
 							</ul>
 						</div>
 						<div class="apply_box_chk"><input type="checkbox" id="apply2" /><label for="apply2">본인은 상기 기재된 개인정보 수집 및 이용내용에 동의합니다.<span>(필수)</span></label></div>

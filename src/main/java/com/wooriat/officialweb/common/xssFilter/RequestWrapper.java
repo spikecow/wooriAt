@@ -1,4 +1,4 @@
-package com.gsitm.officialweb.common.xssFilter;
+package com.wooriat.officialweb.common.xssFilter;
 
 
 import javax.servlet.http.HttpServletRequest;
@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletRequestWrapper;
 
 
 /** ========================================================================================
-* @Package Name   : com.gsitm.officialweb.common.xssFilter
+* @Package Name   : com.wooriat.officialweb.common.xssFilter
 * @FileName  : RequestWrapper.java
 * @Date      : 2019. 10. 17.
 * @Author    : OSE

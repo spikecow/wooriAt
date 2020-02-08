@@ -1,4 +1,4 @@
-package com.gsitm.officialweb.service;
+package com.wooriat.officialweb.service;
 
 import java.util.Map;
 

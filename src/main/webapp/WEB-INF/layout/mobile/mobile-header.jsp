@@ -36,12 +36,12 @@
 				<li><a href="/career/personnel">인재상</a></li>
 				<li><a href="/career/role">인사제도 및 직무</a></li>
 				<li><a href="/career/walfarepsd">복리후생</a></li>
-				<li><a href="https://gsitm.recruiter.co.kr/" target="_blank">채용공고</a></li>
+				<li><a href="https://wooriat.recruiter.co.kr/" target="_blank">채용공고</a></li>
 			</ul>
 		</li>
 		<li><p class="tit"><a href="#none">ABOUT</a></p>
 			<ul class="dep2">
-				<li><a href="/about/gsitm">GS ITM</a></li>
+				<li><a href="/about/wooriat">GS ITM</a></li>
 				<li><a href="/about/history">연혁 </a></li>
 				<li><a href="/about/ethics">윤리경영</a></li>
 				<li><a href="/about/ci">CI가이드</a></li>

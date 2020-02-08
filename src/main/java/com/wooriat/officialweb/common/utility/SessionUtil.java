@@ -1,20 +1,16 @@
-package com.gsitm.officialweb.common.utility;
+package com.wooriat.officialweb.common.utility;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import com.gsitm.officialweb.common.interceptor.RequestInterceptor;
-import com.gsitm.officialweb.constant.GsItemConst;
 
 import lombok.extern.slf4j.Slf4j;
 
 
 /** ========================================================================================
- * @Package Name   : com.gsitm.admin.common.utility
+ * @Package Name   : com.wooriat.admin.common.utility
  * @FileName  : SessionUtil.java
  * @Date      : 2019. 10. 15. 
  * @Author    : ose
@@ -83,7 +79,6 @@ public class SessionUtil {
 	 * 
 	 * @param req
 	 * @param key
-	 * @param obj
 	 * @throws Exception
 	 */
 	public static void remove(HttpServletRequest req, String key) {

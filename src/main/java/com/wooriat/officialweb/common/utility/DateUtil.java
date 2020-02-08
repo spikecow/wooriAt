@@ -1,4 +1,4 @@
-package com.gsitm.officialweb.common.utility;
+package com.wooriat.officialweb.common.utility;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 
 /** ========================================================================================
- * @Package Name   : com.gsitm.admin.common.utility
+ * @Package Name   : com.wooriat.admin.common.utility
  * @FileName  : DateUtil.java
  * @Date      : 2019. 10. 15. 
  * @Author    : 

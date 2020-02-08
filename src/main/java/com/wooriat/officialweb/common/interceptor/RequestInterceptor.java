@@ -1,4 +1,4 @@
-package com.gsitm.officialweb.common.interceptor;
+package com.wooriat.officialweb.common.interceptor;
 
 import java.util.Enumeration;
 
@@ -10,12 +10,12 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-import com.gsitm.officialweb.common.utility.StringUtil;
+import com.wooriat.officialweb.common.utility.StringUtil;
 
 import lombok.extern.slf4j.Slf4j;
 
 /** ========================================================================================
- * @Package Name   : com.gsitm.admin.common.interceptor
+ * @Package Name   : com.wooriat.admin.common.interceptor
  * @FileName  : RequestInterceptor.java
  * @Date      : 2019. 10. 15. 
  * @Author    : 

@@ -1,4 +1,4 @@
-package com.gsitm.officialweb.common.utility;
+package com.wooriat.officialweb.common.utility;
 
 
 import org.springframework.stereotype.Component;
