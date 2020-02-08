@@ -24,10 +24,16 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
     properties:
       hibernate:
         jdbc.lob.non_contextual_creation: true
+#        show_sql: true # systemOut log
+#        format_sql: true
+
 
 build:
   date: @timestamp@

@@ -29,9 +29,9 @@ function layout() {
 	$(document).on('click', '.family_site > a', function(e){
 		e.preventDefault();
 		if(!$(this).parent().hasClass("on")){
-			$(this).parent().addClass("on")
+			$(this).parent().addClass("on");
 		}else{
-			$(this).parent().removeClass("on")
+			$(this).parent().removeClass("on");
 		}
 	});
 }
@@ -50,8 +50,22 @@ function tabContents(ele, idx) {
 	});
 }
 
+// sorting list
+function sortList() {
+	$('.board_sorting > a').click(function  () {
+		$(this).parent().toggleClass('on');
+		return false;
+	});
+	$('.board_sorting').mouseleave(function  () {
+		if ( $(this).find('.sort_list').css('display') == 'block' ) {
+			$(this).removeClass('on');
+		}
+	});
+}
+
 $(function(){
 	layout();
+	sortList();
 	// tab 실행
 	$('.tab_wrap').each(function(){ 
 		var $this = $(this);
