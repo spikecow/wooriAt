@@ -1,18 +1,15 @@
 package com.wooriat.officialweb.service;
 
 
-import com.wooriat.officialweb.common.utility.PagingUtil;
 import com.wooriat.officialweb.domain.KoaSale;
 import com.wooriat.officialweb.repository.SaleRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
