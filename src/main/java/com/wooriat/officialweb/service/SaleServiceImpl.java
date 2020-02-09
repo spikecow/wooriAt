@@ -50,4 +50,11 @@ public class SaleServiceImpl implements SaleService  {
         return saleRepository.findById(id);
     }
 
+    @Override
+    @Transactional
+    public void viewCountPlus(KoaSale koaSale){
+        koaSale.setViewCountPlus();
+        saleRepository.save(koaSale);
+    }
+
 }

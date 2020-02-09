@@ -12,5 +12,6 @@ public interface SaleService {
 
     public Page<KoaSale> getList(Map<String, Object> params, Pageable pageable);
     public Optional<KoaSale> getDetail(Long saleId);
+    public void viewCountPlus(KoaSale koaSale);
 
 }

@@ -148,4 +148,10 @@ public class KoaSale {
     @Column(name = "Memo", length = 10485760)
     private String memo; // 특징 및 기타 내용
 
+    public void setViewCountPlus(){
+        if(this.viewCount == null){
+            this.viewCount = 0L;
+        }
+        this.viewCount += 1;
+    }
 }

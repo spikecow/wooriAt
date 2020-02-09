@@ -24,6 +24,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 @Slf4j
 @Controller
@@ -36,11 +37,7 @@ public class SaleController {
 
 	@GetMapping("/list")
     @ResponseBody
-	public ModelAndView listController(@RequestParam Map<String, Object> params, Model model,
-									   @PageableDefault(
-                    size=5,
-                    sort="regDate", //정렬 key값
-                    direction = Sort.Direction.DESC) Pageable pageable) {
+	public ModelAndView listController(@RequestParam Map<String, Object> params, Model model, Pageable pageable) {
 
 		log.info("page : {}", pageable);
 
@@ -48,17 +45,16 @@ public class SaleController {
 
 		String searchWord = (String)params.get("searchWord");
 		String bizCase = (String)params.get("bizCase");
-
 		int currntPage = page;
 		if(currntPage <=0) {
 			currntPage = 0;
 		}else {
 			currntPage = currntPage -1;
 		}
-		pageable = PageRequest.of(currntPage, 5);
+		pageable = PageRequest.of(currntPage, 5, new Sort(Sort.Direction.DESC, "bunDate"));
 
 		Page<KoaSale> saleList = saleService.getList(params, pageable);
-		//saleList.getPageable().getPageNumber()+1
+
         model.addAttribute("list", saleList);
         model.addAttribute("totalPage", saleList.getTotalPages());
 		model.addAttribute("totalCount", saleList.getTotalElements());
@@ -77,7 +73,10 @@ public class SaleController {
 	@ResponseBody
 	public ModelAndView detailController(Model model, @PathVariable Long id) throws Exception {
 
-		model.addAttribute("data", saleService.getDetail(id).get());
+		Optional<KoaSale> koaSale = saleService.getDetail(id);
+		saleService.viewCountPlus(koaSale.get());
+
+		model.addAttribute("data", koaSale.get());
 
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.setViewName("kr/item/sale_view");
