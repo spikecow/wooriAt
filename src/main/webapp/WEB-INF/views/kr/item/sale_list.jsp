@@ -24,7 +24,7 @@
 				<a href="#none">분양물건정보</a>
 				<ul class="dep_list">
 					<li><a href="/sale/list">분양물건정보</a></li>
-					<li><a href="#none">공매물건정보</a></li>
+					<li><a href="/vendue/list">공매물건정보</a></li>
 				</ul>
 			</div>
 		</div>
@@ -70,14 +70,14 @@
 				<ul>
 					<c:forEach items="${list.content}" var="list" varStatus="status">
 						<li>
-							<a href="/sale/detail/${list.saleId}" class="thum"><img src="/images/SaleItem/${list.NPhoto1}" alt=""></a>
+							<a href="/sale/detail/${list.saleId}" class="thum"><img src="http://images.wooriat.com/SaleItem/${list.NPhoto1}" alt=""></a>
 							<span class="cont">
 								<a href="/sale/detail/${list.saleId}" class="tit">${list.bunName}</a>
 								<span class="info">
 									<strong>사업장위치</strong>
 									<em>
 										${list.address}
-										<c:if test="${empty not list.etcAddress}">
+										<c:if test="${!empty list.etcAddress}">
 											, ${list.etcAddress}
 										</c:if>
 									</em>

@@ -23,7 +23,7 @@
 					<a href="#none">분양물건정보</a>
 					<ul class="dep_list">
 						<li><a href="/sale/list">분양물건정보</a></li>
-						<li><a href="#none">공매물건정보</a></li>
+						<li><a href="/vendue/list">공매물건정보</a></li>
 					</ul>
 				</div>
 			</div>
@@ -36,7 +36,7 @@
 				<!-- 상세 -->
 				<div class="board_view">
 					<div class="board_view_img">
-						<img src="/images/SaleItem/${data.NPhoto2}" alt="">
+						<img src="http://images.wooriat.com/SaleItem/${data.NPhoto2}" alt="">
 					</div>
 					<div class="board_view_head">
 						<span class="tit">${data.bunName}</span>
@@ -56,7 +56,7 @@
 									<th>공급위치</th>
 									<td colspan="3">
 										${data.address}
-										<c:if test="${empty not data.etcAddress}">
+										<c:if test="${!empty data.etcAddress}">
 											, ${data.etcAddress}
 										</c:if>
 									</td>
