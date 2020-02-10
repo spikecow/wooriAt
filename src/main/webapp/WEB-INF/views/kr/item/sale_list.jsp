@@ -23,8 +23,8 @@
 			<div class="dep2">
 				<a href="#none">분양물건정보</a>
 				<ul class="dep_list">
-					<li><a href="/sale/list">분양물건정보</a></li>
-					<li><a href="/vendue/list">공매물건정보</a></li>
+					<li><a href="/item/sale/list">분양물건정보</a></li>
+					<li><a href="/item/vendue/list">공매물건정보</a></li>
 				</ul>
 			</div>
 		</div>
@@ -38,25 +38,25 @@
 			<div class="board_sorting w220">
 				<a href="#none">사업종류 전체</a>
 				<ul class="sort_list">
-					<li><a href="/sale/list">사업종류 전체</a></li>
-					<li><a href="/sale/list?bizCase=A">아파트</a></li>
-					<li><a href="/sale/list?bizCase=F">아파트형공장</a></li>
-					<li><a href="/sale/list?bizCase=O">오피스텔</a></li>
-					<li><a href="/sale/list?bizCase=P">오피스텔/상가</a></li>
-					<li><a href="/sale/list?bizCase=M">오피스/상가</a></li>
-					<li><a href="/sale/list?bizCase=D">도시형생활주택</a></li>
-					<li><a href="/sale/list?bizCase=U">도시형생활주택/오피스텔</a></li>
-					<li><a href="/sale/list?bizCase=J">주상복합</a></li>
-					<li><a href="/sale/list?bizCase=G">골프장</a></li>
-					<li><a href="/sale/list?bizCase=S">상가</a></li>
-					<li><a href="/sale/list?bizCase=T">타운하우스</a></li>
-					<li><a href="/sale/list?bizCase=R">리조트</a></li>
-					<li><a href="/sale/list?bizCase=L">토지</a></li>
-					<li><a href="/sale/list?bizCase=K">지식산업센터</a></li>
-					<li><a href="/sale/list?bizCase=N">아파트/오피스텔</a></li>
-					<li><a href="/sale/list?bizCase=Q">생활숙박시설</a></li>
-					<li><a href="/sale/list?bizCase=S">오피스텔/오피스</a></li>
-					<li><a href="/sale/list?bizCase=Z">기타</a></li>
+					<li><a href="/item/sale/list">사업종류 전체</a></li>
+					<li><a href="/item/sale/list?bizCase=A">아파트</a></li>
+					<li><a href="/item/sale/list?bizCase=F">아파트형공장</a></li>
+					<li><a href="/item/sale/list?bizCase=O">오피스텔</a></li>
+					<li><a href="/item/sale/list?bizCase=P">오피스텔/상가</a></li>
+					<li><a href="/item/sale/list?bizCase=M">오피스/상가</a></li>
+					<li><a href="/item/sale/list?bizCase=D">도시형생활주택</a></li>
+					<li><a href="/item/sale/list?bizCase=U">도시형생활주택/오피스텔</a></li>
+					<li><a href="/item/sale/list?bizCase=J">주상복합</a></li>
+					<li><a href="/item/sale/list?bizCase=G">골프장</a></li>
+					<li><a href="/item/sale/list?bizCase=S">상가</a></li>
+					<li><a href="/item/sale/list?bizCase=T">타운하우스</a></li>
+					<li><a href="/item/sale/list?bizCase=R">리조트</a></li>
+					<li><a href="/item/sale/list?bizCase=L">토지</a></li>
+					<li><a href="/item/sale/list?bizCase=K">지식산업센터</a></li>
+					<li><a href="/item/sale/list?bizCase=N">아파트/오피스텔</a></li>
+					<li><a href="/item/sale/list?bizCase=Q">생활숙박시설</a></li>
+					<li><a href="/item/sale/list?bizCase=S">오피스텔/오피스</a></li>
+					<li><a href="/item/sale/list?bizCase=Z">기타</a></li>
 				</ul>
 			</div>
 			<!-- //sorting -->
@@ -70,9 +70,9 @@
 				<ul>
 					<c:forEach items="${list.content}" var="list" varStatus="status">
 						<li>
-							<a href="/sale/detail/${list.saleId}" class="thum"><img src="http://images.wooriat.com/SaleItem/${list.NPhoto1}" alt=""></a>
+							<a href="/item/sale/detail/${list.saleId}" class="thum"><img src="http://images.wooriat.com/SaleItem/${list.NPhoto1}" alt=""></a>
 							<span class="cont">
-								<a href="/sale/detail/${list.saleId}" class="tit">${list.bunName}</a>
+								<a href="/item/sale/detail/${list.saleId}" class="tit">${list.bunName}</a>
 								<span class="info">
 									<strong>사업장위치</strong>
 									<em>
@@ -142,7 +142,7 @@
 
 		$("#searchWord").keydown(function(key) {
 			if (key.keyCode == 13) {
-				location.href = "/sale/list?searchWord="+ $('#searchWord').val();
+				location.href = "/item/sale/list?searchWord="+ $('#searchWord').val();
 			}
 		});
 	});
@@ -158,12 +158,12 @@
 	$('.paging span.num a').click(function(){
 		var text = Number(this.text);
 		page = Number(text);
-		location.href ="/sale/list?page="+ page + "&bizCase="+bizCase +  "&searchWord="+ searchWord ;
+		location.href ="/item/sale/list?page="+ page + "&bizCase="+bizCase +  "&searchWord="+ searchWord ;
 	});
 
 	$('.paging a.first').click(function(){
 		page = 1;
-		location.href ="/sale/list?page="+ page + "&bizCase="+bizCase +  "&searchWord="+ searchWord ;
+		location.href ="/item/sale/list?page="+ page + "&bizCase="+bizCase +  "&searchWord="+ searchWord ;
 
 	});
 
@@ -173,7 +173,7 @@
 			return false;
 		}
 		page = totalPage;
-		location.href ="/sale/list?page="+ page + "&bizCase="+bizCase +  "&searchWord="+ searchWord ;
+		location.href ="/item/sale/list?page="+ page + "&bizCase="+bizCase +  "&searchWord="+ searchWord ;
 	});
 
 	$('.paging a.prev').click(function(){
@@ -181,7 +181,7 @@
 		if(page < 0){
 			page =1;
 		}
-		location.href ="/sale/list?page="+ page + "&bizCase="+bizCase + "&searchWord="+ searchWord ;
+		location.href ="/item/sale/list?page="+ page + "&bizCase="+bizCase + "&searchWord="+ searchWord ;
 	});
 
 	$('.paging a.next').click(function(){
@@ -196,11 +196,11 @@
 
 		// var text = Number(this.text);
 		// page = Number(text) -1;
-		location.href ="/sale/list?page="+ page + "&bizCase="+bizCase + "&searchWord="+ searchWord ;
+		location.href ="/item/sale/list?page="+ page + "&bizCase="+bizCase + "&searchWord="+ searchWord ;
 	});
 
 	$('button[name=btnViewDetail]').on('click', function () {
-		location.href = "/sale/list?searchWord="+ $('#searchWord').val();
+		location.href = "/item/sale/list?searchWord="+ $('#searchWord').val();
 	});
 
 

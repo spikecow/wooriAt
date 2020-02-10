@@ -22,8 +22,8 @@
 				<div class="dep2">
 					<a href="#none">분양물건정보</a>
 					<ul class="dep_list">
-						<li><a href="/sale/list">분양물건정보</a></li>
-						<li><a href="/vendue/list">공매물건정보</a></li>
+						<li><a href="/item/sale/list">분양물건정보</a></li>
+						<li><a href="/item/vendue/list">공매물건정보</a></li>
 					</ul>
 				</div>
 			</div>
@@ -181,7 +181,7 @@
 				<!-- //상세 -->
 				<!-- 버튼 -->
 				<div class="board_btn_area">
-					<a href="/sale/list" class="btn_list"><span>목록</span></a>
+					<a href="/item/sale/list" class="btn_list"><span>목록</span></a>
 				</div>
 				<!-- //버튼 -->
 			</div>

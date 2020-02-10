@@ -22,8 +22,8 @@
 				<div class="dep2">
 					<a href="#none">분양물건정보</a>
 					<ul class="dep_list">
-						<li><a href="/sale/list">분양물건정보</a></li>
-						<li><a href="/vendue/list">공매물건정보</a></li>
+						<li><a href="/item/sale/list">분양물건정보</a></li>
+						<li><a href="/item/vendue/list">공매물건정보</a></li>
 					</ul>
 				</div>
 			</div>
@@ -94,10 +94,10 @@
 					<div class="board_view_pg">
 						<ul>
 							<li class="prev">
-								<strong>이전글</strong><span><a href="/vendue/detail/${prevDetail.sellId}">${prevDetail.newsTitle}</a></span>
+								<strong>이전글</strong><span><a href="/item/vendue/detail/${prevDetail.sellId}">${prevDetail.newsTitle}</a></span>
 							</li>
 							<li class="next">
-								<strong>다음글</strong><span><a href="/vendue/detail/${nextDetail.sellId}">${nextDetail.newsTitle}</a></span>
+								<strong>다음글</strong><span><a href="/item/vendue/detail/${nextDetail.sellId}">${nextDetail.newsTitle}</a></span>
 							</li>
 						</ul>
 					</div>
@@ -105,7 +105,7 @@
 				<!-- //상세 -->
 				<!-- 버튼 -->
 				<div class="board_btn_area">
-					<a href="/vendue/list" class="btn_list"><span>목록</span></a>
+					<a href="/item/vendue/list" class="btn_list"><span>목록</span></a>
 				</div>
 				<!-- //버튼 -->
 			</div>

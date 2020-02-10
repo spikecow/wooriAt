@@ -22,8 +22,8 @@
 			<div class="dep2">
 				<a href="#none">공매물건정보</a>
 				<ul class="dep_list">
-					<li><a href="/sale/list">분양물건정보</a></li>
-					<li><a href="/vendue/list">공매물건정보</a></li>
+					<li><a href="/item/sale/list">분양물건정보</a></li>
+					<li><a href="/item/vendue/list">공매물건정보</a></li>
 				</ul>
 			</div>
 		</div>
@@ -37,17 +37,17 @@
 			<div class="board_sorting">
 				<a href="#none">진행상황 전체</a>
 				<ul class="sort_list">
-					<li><a href="/vendue/list">진행상황 전체</a></li>
-					<li><a href="/vendue/list?sortStatus=진행">진행</a></li>
-					<li><a href="/vendue/list?sortStatus=중지">중지</a></li>
-					<li><a href="/vendue/list?sortStatus=취소">취소</a></li>
-					<li><a href="/vendue/list?sortStatus=낙찰">낙찰</a></li>
-					<li><a href="/vendue/list?sortStatus=일부낙찰">일부낙찰</a></li>
-					<li><a href="/vendue/list?sortStatus=공지">공지</a></li>
-					<li><a href="/vendue/list?sortStatus=유찰">유찰</a></li>
-					<li><a href="/vendue/list?sortStatus=종료">종료</a></li>
-					<li><a href="/vendue/list?sortStatus=수의계약진행">수의계약진행</a></li>
-					<li><a href="/vendue/list?sortStatus=수의계약완료">수의계약완료</a></li>
+					<li><a href="/item/vendue/list">진행상황 전체</a></li>
+					<li><a href="/item/vendue/list?sortStatus=진행">진행</a></li>
+					<li><a href="/item/vendue/list?sortStatus=중지">중지</a></li>
+					<li><a href="/item/vendue/list?sortStatus=취소">취소</a></li>
+					<li><a href="/item/vendue/list?sortStatus=낙찰">낙찰</a></li>
+					<li><a href="/item/vendue/list?sortStatus=일부낙찰">일부낙찰</a></li>
+					<li><a href="/item/vendue/list?sortStatus=공지">공지</a></li>
+					<li><a href="/item/vendue/list?sortStatus=유찰">유찰</a></li>
+					<li><a href="/item/vendue/list?sortStatus=종료">종료</a></li>
+					<li><a href="/item/vendue/list?sortStatus=수의계약진행">수의계약진행</a></li>
+					<li><a href="/item/vendue/list?sortStatus=수의계약완료">수의계약완료</a></li>
 				</ul>
 			</div>
 			<!-- //sorting -->
@@ -81,7 +81,7 @@
 					<tr>
 						<td>${(totalCount - status.index) - ( (page - 1)  *  10 ) }</td>
 						<td class="state"><span class="ing">${list.sortStatus}</span></td>
-						<td class="tit3"><a href="/vendue/detail/${list.sellId}">${list.newsTitle}</a></td>
+						<td class="tit3"><a href="/item/vendue/detail/${list.sellId}">${list.newsTitle}</a></td>
 						<td>
 							<c:if test="${!empty list.insertFile1}">
 							<span class="icon_file"><span class="blind">첨부파일</span></span>
@@ -116,7 +116,7 @@
 
 		$("#searchWord").keydown(function(key) {
 			if (key.keyCode == 13) {
-				location.href = "/vendue/list?searchWord="+ $('#searchWord').val();
+				location.href = "/item/vendue/list?searchWord="+ $('#searchWord').val();
 			}
 		});
 	});
@@ -132,12 +132,12 @@
 	$('.paging span.num a').click(function(){
 		var text = Number(this.text);
 		page = Number(text);
-		location.href ="/vendue/list?page="+ page + "&sortStatus="+sortStatus +  "&searchWord="+ searchWord ;
+		location.href ="/item/vendue/list?page="+ page + "&sortStatus="+sortStatus +  "&searchWord="+ searchWord ;
 	});
 
 	$('.paging a.first').click(function(){
 		page = 1;
-		location.href ="/vendue/list?page="+ page + "&sortStatus="+sortStatus +  "&searchWord="+ searchWord ;
+		location.href ="/item/vendue/list?page="+ page + "&sortStatus="+sortStatus +  "&searchWord="+ searchWord ;
 
 	});
 
@@ -147,7 +147,7 @@
 			return false;
 		}
 		page = totalPage;
-		location.href ="/vendue/list?page="+ page + "&sortStatus="+sortStatus +  "&searchWord="+ searchWord ;
+		location.href ="/item/vendue/list?page="+ page + "&sortStatus="+sortStatus +  "&searchWord="+ searchWord ;
 	});
 
 	$('.paging a.prev').click(function(){
@@ -155,7 +155,7 @@
 		if(page < 0){
 			page =1;
 		}
-		location.href ="/vendue/list?page="+ page + "&sortStatus="+sortStatus + "&searchWord="+ searchWord ;
+		location.href ="/item/vendue/list?page="+ page + "&sortStatus="+sortStatus + "&searchWord="+ searchWord ;
 	});
 
 	$('.paging a.next').click(function(){
@@ -170,11 +170,11 @@
 
 		// var text = Number(this.text);
 		// page = Number(text) -1;
-		location.href ="/vendue/list?page="+ page + "&sortStatus="+sortStatus + "&searchWord="+ searchWord ;
+		location.href ="/item/vendue/list?page="+ page + "&sortStatus="+sortStatus + "&searchWord="+ searchWord ;
 	});
 
 	$('button[name=btnViewDetail]').on('click', function () {
-		location.href = "/vendue/list?searchWord="+ $('#searchWord').val();
+		location.href = "/item/vendue/list?searchWord="+ $('#searchWord').val();
 	});
 
 
