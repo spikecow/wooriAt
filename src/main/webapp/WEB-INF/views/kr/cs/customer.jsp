@@ -24,7 +24,7 @@
 				<a href="#none">고객문의</a>
 				<ul class="dep_list">
 					<li><a href="#none">약관공시</a></li>
-					<li><a href="#none">고객문의</a></li>
+					<li><a href="/cs/customer">고객문의</a></li>
 					<li><a href="#none">신탁 FAQ</a></li>
 					<li><a href="#none">개인정보처리방침</a></li>
 				</ul>
