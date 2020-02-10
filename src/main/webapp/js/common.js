@@ -63,6 +63,25 @@ function sortList() {
 	});
 }
 
+// layer popup 
+function layerOpen(id){	//레이어 팝업 열기
+	var layerId = $('#'+id);
+	layerId.show();
+	$('html').addClass('fix');
+	// 팝업 이외의 영역 클릭시 닫기
+	$(document).mouseup(function (e) { 
+		if (!$(".pop_cont").is(e.target) && $(".pop_cont").has(e.target).length === 0){
+			layerId.hide();
+			$('html').removeClass('fix');
+		}	
+	});
+}
+function layerClose(id) {  //레이어 팝업 닫기
+	var layerId = $('#'+id);
+	layerId.hide();
+	$('html').removeClass('fix');
+};
+
 $(function(){
 	layout();
 	sortList();
