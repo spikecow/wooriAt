@@ -34,7 +34,7 @@
 			<div class="content_wrap">
 				<h4>공매물건정보</h4>
 				<span class="board_top_rtxt">
-					<span class="txt">PDF파일 내용이 보이지 않는 경우 <em>Sumatra PDF</em>를 설치해주시기 바랍니다.</span><a href="/down/SumatraPDF-3.0-install.exe" class="down_sumatra"><span>Sumatra PDF</span></a>
+					<span class="txt">PDF파일 내용이 보이지 않는 경우 <em>Sumatra PDF</em>를 설치해주시기 바랍니다.</span><a href="/download/SumatraPDF-3.0-install.exe" class="down_sumatra"><span>Sumatra PDF</span></a>
 				</span>
 				<!-- 상세 -->
 				<div class="board_view">

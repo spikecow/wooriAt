@@ -2,6 +2,8 @@ package com.wooriat.officialweb.controller;
 
 import com.wooriat.officialweb.domain.KoaSale;
 import com.wooriat.officialweb.domain.ShotSell;
+import com.wooriat.officialweb.domain.TbNotice;
+import com.wooriat.officialweb.service.NoticeService;
 import com.wooriat.officialweb.service.SaleService;
 import com.wooriat.officialweb.service.ShortSellService;
 import lombok.RequiredArgsConstructor;
@@ -40,18 +42,24 @@ public class MainController {
 
 	private final ShortSellService shortSellService;
 
+	private final NoticeService noticeService;
+
 	@GetMapping("/")
 	public ModelAndView main(@RequestParam Map<String, Object> params,Device device) {
 		ModelAndView modelAndView = new ModelAndView();
 
-		Pageable pageable = PageRequest.of(0, 3, new Sort(Sort.Direction.DESC, "bunDate"));
-		Pageable pageable2 = PageRequest.of(0, 7, new Sort(Sort.Direction.DESC, "regDate").and(new Sort(Sort.Direction.DESC, "sellId")) );
+		Pageable salePageable = PageRequest.of(0, 3, new Sort(Sort.Direction.DESC, "bunDate"));
+		Pageable sellPageable = PageRequest.of(0, 7, new Sort(Sort.Direction.DESC, "regDate").and(new Sort(Sort.Direction.DESC, "sellId")) );
+		Pageable newsPageable = PageRequest.of(0, 3, new Sort(Sort.Direction.DESC, "regDate"));
 
-		Page<KoaSale> saleList = saleService.getList(params, pageable); //분양
-		Page<ShotSell> shotSellList = shortSellService.getList(params, pageable2); //공매물
+		Page<KoaSale> saleList = saleService.getList(params, salePageable); //분양
+		Page<ShotSell> shotSellList = shortSellService.getList(params, sellPageable); //공매물
+		params.put("menuCd","C");
+		Page<TbNotice> noticeList = noticeService.getList(params, newsPageable); // 회사소식
 
 		modelAndView.addObject("saleList", saleList);
 		modelAndView.addObject("shotSellList", shotSellList);
+		modelAndView.addObject("noticeList", noticeList);
 
 		modelAndView.setViewName("kr/main/main");
 

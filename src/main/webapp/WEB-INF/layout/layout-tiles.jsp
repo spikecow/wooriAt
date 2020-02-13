@@ -16,9 +16,9 @@
 		<link rel="stylesheet" type="text/css" href="/css/content.css">
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 
-
 		<script src="/js/lib/jquery-1.12.4.min.js"></script>
 		<script src="/js/lib/jquery.easing.1.3.js"></script>
+		<script src="/js/lib/jquery-ui.min.js"></script>
 		<script src="/js/lib/swiper.min.js"></script>
 		<script src="/js/lib/gsap.min.js"></script>
 		<script src="/js/lib/jquery.waypoints.min.js"></script>

@@ -45,4 +45,40 @@ public class CsController {
 
         return map;
     }*/
+
+    @GetMapping("/terms")
+    @ResponseBody
+    public ModelAndView detailTermsController() throws Exception {
+
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("kr/cs/terms");
+        return modelAndView;
+    }
+
+    @GetMapping("/privacy")
+    @ResponseBody
+    public ModelAndView detailPrivacyController() throws Exception {
+
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("kr/cs/privacy");
+        return modelAndView;
+    }
+
+    @GetMapping("/security")
+    @ResponseBody
+    public ModelAndView detailSecurityController() throws Exception {
+
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("kr/cs/security");
+        return modelAndView;
+    }
+
+    @GetMapping("/faq")
+    @ResponseBody
+    public ModelAndView detailFaqController() throws Exception {
+
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("kr/cs/faq");
+        return modelAndView;
+    }
 }

@@ -144,15 +144,11 @@
                     <dd>
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
+                                <c:forEach items="${noticeList.content}" var="list">
                                 <div class="swiper-slide">
-                                    <a href=""><strong>공동 대표이사 취임</strong> / 당사는 2019년 12월 30일 주주총회 및 이사회를 열고 이창재 대표이사를 선임했습니다…</a>
+                                    <a href="/company/news/${list.seqNo}/${list.menuCd}"><strong>${list.title}</strong></a>
                                 </div>
-                                <div class="swiper-slide">
-                                    <a href=""><strong>공동 대표이사 취임</strong> / 당사는 2019년 12월 30일 주주총회 및 이사회를 열고 이창재 대표이사를 선임했습니다…</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href=""><strong>공동 대표이사 취임</strong> / 당사는 2019년 12월 30일 주주총회 및 이사회를 열고 이창재 대표이사를 선임했습니다 당사는 2019년 12월 30일 주주총회 및 이사회를 열고 이창재 대표이사를 선임했습니</a>
-                                </div>
+                                </c:forEach>
                             </div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>

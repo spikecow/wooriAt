@@ -31,8 +31,9 @@
 #container .title_area h3 {padding-top:160px;color:#fff;font-family:'Noto Sans';font-weight:500;font-size:64px;line-height:1;letter-spacing:-1px;text-align:center;}
 #container .content_wrap {position:relative;width:1200px;margin:0 auto;box-sizing:border-box;padding:80px 36px 120px;}
 #container .content_wrap:after {content:'';display:block;clear:both;}
-#container .content_wrap h4 {float:left;margin:0 0 50px;color:#333;font-size:44px;font-family:'Noto Sans';line-height:1;font-weight:500;}
-#container .content_wrap h5 {clear:both;margin:50px 0 24px;color:#333;font-size:26px;font-family:'Noto Sans';line-height:1;}
+#container .content_wrap h4 {float:left;margin:0 0 50px;color:#333;font-size:44px;font-family:'Noto Sans';line-height:1;font-weight:500;letter-spacing: -2.2px;}
+#container .content_wrap h5 {clear:both;margin:50px 0 18px;color:#333;font-size:26px;font-family:'Noto Sans';line-height:1;letter-spacing: -1.3px;}
+#container .content_wrap h5 span {color:#0068b8;}
 
 .lnb_area {height:60px;background:#f8f8f8;border-bottom:#e5e5e5 1px solid;}
 .lnb_area .lnb_wrap {position:relative;width:1200px;margin:0 auto;box-sizing:border-box;padding:0 36px;}
@@ -85,3 +86,4 @@
 
 
 
+/* #header , #footer , .lnb_area {display: none;} */

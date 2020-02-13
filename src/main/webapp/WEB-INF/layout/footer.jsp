@@ -4,9 +4,9 @@
 	<div class="footer_wrap">
 		<div class="foot_menu">
 			<ul>
-				<li class="privacy"><a href="#">개인정보처리방침</a></li>
+				<li class="privacy"><a href="/cs/privacy">개인정보처리방침</a></li>
 				<li><a href="#">오시는길</a></li>
-				<li><a href="#">고객문의</a></li>
+				<li><a href="/cs/customer">고객문의</a></li>
 				<li><a href="#">윤리강령</a></li>
 			</ul>
 		</div>
