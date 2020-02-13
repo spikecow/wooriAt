@@ -1,15 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 
 <!DOCTYPE html>
 <html lang="ko">
 <head>
 	<script type="text/javascript">
 
+		var tabIdx = parseInt('${typeCd}');
+
 		$(document).ready(function(){
 			$(".lnb_area .dep3").hide();
 			$(".lnb_area .dep2 a:eq(0)").html("경영현황");
+
+			tabContents($(".tab_wrap"), tabIdx - 1);
 		});
 
 	</script>
@@ -37,11 +43,11 @@
 				<div class="tab_type1 tab_wrap">
 					<!-- tab menu -->
 					<ul class="tab_menu">
-						<li class="tab_btn"><a href="#none">수시공시</a></li>
-						<li class="tab_btn"><a href="#none">영업보고</a></li>
-						<li class="tab_btn"><a href="#none">영업순자본비율</a></li>
-						<li class="tab_btn"><a href="#none">감시보고서</a></li>
-						<li class="tab_btn"><a href="#none">경영공시</a></li>
+						<li class="tab_btn"><a href="/com/news?menuCd=M&typeCd=01">수시공시</a></li>
+						<li class="tab_btn"><a href="/com/news?menuCd=M&typeCd=02">영업보고</a></li>
+						<li class="tab_btn"><a href="/com/news?menuCd=M&typeCd=03">영업순자본비율</a></li>
+						<li class="tab_btn"><a href="/com/news?menuCd=M&typeCd=04">감시보고서</a></li>
+						<li class="tab_btn"><a href="/com/news?menuCd=M&typeCd=05">경영공시</a></li>
 					</ul>
 					<!-- tab menu -->
 					<!-- tab cont -->
@@ -65,77 +71,24 @@
 									</tr>
 								</thead>
 								<tbody>
+									<c:forEach items="${list.content}" var="list" varStatus="status">
 									<tr>
-										<td>20</td>
-										<td class="tit2"><a href="#none">임시주주총회 의결권 행사내역 등 공시(2019.12.30)</a></td>
-										<td class="file"><a href="#none" class="btn_m pdf"><span>PDF 보기</span></a><a href="#none" class="btn_m down"><span>다운로드 받기</span></a></td>
-										<td>2019. 12. 31</td>
+										<td>${(totalCount - status.index) - ( (page - 1)  *  10 ) }</td>
+										<td class="tit2"><a href="#none">${list.title}</a></td>
+										<td class="file"><a href="http://images.wooriat.com/Government/${list.img}" class="btn_m pdf" target="_blank"><span>PDF 보기</span></a><a href="#none" class="btn_m down"><span>다운로드 받기</span></a></td>
+										<td>
+											<fmt:parseDate value="${ list.regDate }" pattern="yyyy-MM-dd'T'HH:mm" var="cretDtm" type="both" />
+											<fmt:formatDate pattern="yyyy.MM.dd" value="${ cretDtm }" />
+										</td>
 									</tr>
-									<tr>
-										<td>19</td>
-										<td class="tit2"><a href="#none">임시주주총회 의결권 행사내역 등 공시(2019.12.30) 임시주주총회 의결권 행사내역 등 공시(2019.12.30) 임시주주총회 의결권 행사내역 등 공시(2019.12.30) 임시주주총회 의결권 행사내역 등 공시(2019.12.30)</a></td>
-										<td class="file"><a href="#none" class="btn_m pdf"><span>PDF 보기</span></a><a href="#none" class="btn_m down"><span>다운로드 받기</span></a></td>
-										<td>2019. 12. 31</td>
-									</tr>
-									<tr>
-										<td>18</td>
-										<td class="tit2"><a href="#none">임시주주총회 의결권 행사내역 등 공시(2019.12.30)</a></td>
-										<td class="file"><a href="#none" class="btn_m pdf"><span>PDF 보기</span></a><a href="#none" class="btn_m down"><span>다운로드 받기</span></a></td>
-										<td>2019. 12. 31</td>
-									</tr>
-									<tr>
-										<td>17</td>
-										<td class="tit2"><a href="#none">임시주주총회 의결권 행사내역 등 공시(2019.12.30)</a></td>
-										<td class="file"><a href="#none" class="btn_m pdf"><span>PDF 보기</span></a><a href="#none" class="btn_m down"><span>다운로드 받기</span></a></td>
-										<td>2019. 12. 31</td>
-									</tr>
-									<tr>
-										<td>16</td>
-										<td class="tit2"><a href="#none">임시주주총회 의결권 행사내역 등 공시(2019.12.30)</a></td>
-										<td class="file"><a href="#none" class="btn_m pdf"><span>PDF 보기</span></a><a href="#none" class="btn_m down"><span>다운로드 받기</span></a></td>
-										<td>2019. 12. 31</td>
-									</tr>
-									<tr>
-										<td>15</td>
-										<td class="tit2"><a href="#none">임시주주총회 의결권 행사내역 등 공시(2019.12.30)</a></td>
-										<td class="file"><a href="#none" class="btn_m pdf"><span>PDF 보기</span></a><a href="#none" class="btn_m down"><span>다운로드 받기</span></a></td>
-										<td>2019. 12. 31</td>
-									</tr>
-									<tr>
-										<td>14</td>
-										<td class="tit2"><a href="#none">임시주주총회 의결권 행사내역 등 공시(2019.12.30)</a></td>
-										<td class="file"><a href="#none" class="btn_m pdf"><span>PDF 보기</span></a><a href="#none" class="btn_m down"><span>다운로드 받기</span></a></td>
-										<td>2019. 12. 31</td>
-									</tr>
-									<tr>
-										<td>13</td>
-										<td class="tit2"><a href="#none">임시주주총회 의결권 행사내역 등 공시(2019.12.30)</a></td>
-										<td class="file"><a href="#none" class="btn_m pdf"><span>PDF 보기</span></a><a href="#none" class="btn_m down"><span>다운로드 받기</span></a></td>
-										<td>2019. 12. 31</td>
-									</tr>
-									<tr>
-										<td>12</td>
-										<td class="tit2"><a href="#none">임시주주총회 의결권 행사내역 등 공시(2019.12.30)</a></td>
-										<td class="file"><a href="#none" class="btn_m pdf"><span>PDF 보기</span></a><a href="#none" class="btn_m down"><span>다운로드 받기</span></a></td>
-										<td>2019. 12. 31</td>
-									</tr>
-									<tr>
-										<td>11</td>
-										<td class="tit2"><a href="#none">임시주주총회 의결권 행사내역 등 공시(2019.12.30)</a></td>
-										<td class="file"><a href="#none" class="btn_m pdf"><span>PDF 보기</span></a><a href="#none" class="btn_m down"><span>다운로드 받기</span></a></td>
-										<td>2019. 12. 31</td>
-									</tr>
+									</c:forEach>
 								</tbody>
 							</table>	 
 						</div>
 						<!-- //목록 -->
 						<!-- 페이징 -->
 						<div class="paging">
-							<a href="#none" class="first"><span class="blind">처음 페이지로 이동</span></a><a href="#none" class="prev"><span class="blind">이전 페이지로 이동</span></a>
-							<span class="num">
-								<span><a href="#none" class="active">1</a></span><span><a href="#none">2</a></span><span><a href="#none">3</a></span><span><a href="#none">4</a></span><span><a href="#none">5</a></span>
-							</span>
-							<a href="#none" class="next"><span class="blind">다음 페이지로 이동</span></a><a href="#none" class="last"><span class="blind">마지막 페이지로 이동</span></a>
+							${pagingHtml}
 						</div>
 						<!-- //페이징 -->
 					</div>
@@ -149,3 +102,68 @@
 	</div>
 </body>
 </html>
+<script type="text/javascript">
+
+
+	$(document).ready(function() {
+
+		$("#searchWord").keydown(function(key) {
+			if (key.keyCode == 13) {
+				location.href = "/com/news?searchWord="+ $('#searchWord').val();
+			}
+		});
+	});
+
+	var page = "${page}";
+
+	var searchWord  = "${searchWord}"
+	var totalPage = Number('${totalPage}');
+	var menuCd = "${menuCd}";
+	var typeCd = "${typeCd}";
+	
+
+	$('.paging span.num a').click(function(){
+		var text = Number(this.text);
+		page = Number(text);
+		location.href ="/com/news?page="+ page + "&menuCd="+menuCd +  "&typeCd=" + typeCd;
+	});
+
+	$('.paging a.first').click(function(){
+		page = 1;
+		location.href ="/com/news?page="+ page + "&menuCd="+menuCd +  "&typeCd=" + typeCd;
+
+	});
+
+	$('.paging a.last').click(function(){
+		if(page == totalPage){
+			alert("마지막페이지 입니다.");
+			return false;
+		}
+		page = totalPage;
+		location.href ="/com/news?page="+ page + "&menuCd="+menuCd +  "&typeCd=" + typeCd;
+	});
+
+	$('.paging a.prev').click(function(){
+		page = Number(page-1);
+		if(page < 0){
+			page =1;
+		}
+		location.href ="/com/news?page="+ page + "&menuCd="+menuCd + "&typeCd=" + typeCd;
+	});
+
+	$('.paging a.next').click(function(){
+		if(page == totalPage){
+			alert("마지막페이지 입니다.");
+			return false;
+		}
+		page = Number(page+1);
+		if(page > totalPage){
+			page = totalPage;
+		}
+
+		// var text = Number(this.text);
+		// page = Number(text) -1;
+		location.href ="/com/news?page="+ page + "&menuCd="+menuCd + "&typeCd=" + typeCd;
+	});
+
+</script>

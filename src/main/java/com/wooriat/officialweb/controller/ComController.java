@@ -57,7 +57,7 @@ public class ComController {
             currentPage = currentPage -1;
         }
 
-        pageable = PageRequest.of(currentPage, 5, new Sort(Sort.Direction.DESC, "regDate"));
+        pageable = PageRequest.of(currentPage, 10, new Sort(Sort.Direction.DESC, "regDate"));
 
         if(StringUtils.equalsIgnoreCase(menuCd, "C")) {
             modelAndView.setViewName("kr/company/news");
@@ -67,11 +67,11 @@ public class ComController {
         }
         else if(StringUtils.equalsIgnoreCase(menuCd, "P")){
             modelAndView.setViewName("kr/company/photonews");
-            pageable = PageRequest.of(currentPage, 6, new Sort(Sort.Direction.DESC, "regDate"));
+            pageable = PageRequest.of(currentPage, 10, new Sort(Sort.Direction.DESC, "regDate"));
         }
         else if(StringUtils.equalsIgnoreCase(menuCd, "S")){
             modelAndView.setViewName("kr/company/csr");
-            pageable = PageRequest.of(currentPage, 6, new Sort(Sort.Direction.DESC, "regDate"));
+            pageable = PageRequest.of(currentPage, 10, new Sort(Sort.Direction.DESC, "regDate"));
         }
 
         Page<TbNotice> noticeList = noticeService.getList(params, pageable);

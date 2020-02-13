@@ -10,11 +10,18 @@
 		<meta name="viewport" content="wistrongh=1200">
 		<meta name="description" content="">
 		<title>우리자산신탁</title>
+		<link rel="stylesheet" type="text/css" href="/css/lib/swiper.min.css">
 		<link rel="stylesheet" type="text/css" href="/css/common.css">
 		<link rel="stylesheet" type="text/css" href="/css/layout.css">
 		<link rel="stylesheet" type="text/css" href="/css/content.css">
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+
 		<script src="/js/lib/jquery-1.12.4.min.js"></script>
 		<script src="/js/lib/jquery.easing.1.3.js"></script>
+		<script src="/js/lib/swiper.min.js"></script>
+		<script src="/js/lib/gsap.min.js"></script>
+		<script src="/js/lib/jquery.waypoints.min.js"></script>
 		<script src="/js/common.js"></script>
 		<!--[if lte IE 9]>
 		<script src="/js/lib/placeholders.min.js"></script>

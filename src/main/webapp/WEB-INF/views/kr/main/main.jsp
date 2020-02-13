@@ -6,29 +6,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="wistrongh=1200">
-    <meta name="description" content="">
-    <title>우리자산신탁</title>
-    <link rel="stylesheet" type="text/css" href="/css/lib/swiper.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/common.css">
-    <link rel="stylesheet" type="text/css" href="/css/layout.css">
-    <link rel="stylesheet" type="text/css" href="/css/content.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-
-    <script src="/js/lib/jquery-1.12.4.min.js"></script>
-    <script src="/js/lib/jquery.easing.1.3.js"></script>
-    <script src="/js/lib/swiper.min.js"></script>
-    <script src="/js/lib/gsap.min.js"></script>
-    <script src="/js/lib/jquery.waypoints.min.js"></script>
-
-    <!--[if lte IE 9]>
-    <script src="/js/lib/placeholders.min.js"></script>
-    <script src="/js/lib/html5.js"></script>
-    <![endif]-->
-</head>
+<body>
 
 <!-- container -->
 <div id="container" class="main">
@@ -187,51 +165,7 @@
     </div>
     <!-- //content -->
 </div>
-<!-- //container --><%--
-    <!-- footer -->
-    <footer id="footer">
-        <div class="footer_wrap">
-            <div class="foot_menu">
-                <ul>
-                    <li class="privacy"><a href="#">개인정보처리방침</a></li>
-                    <li><a href="#">오시는길</a></li>
-                    <li><a href="#">고객문의</a></li>
-                    <li><a href="#">윤리강령</a></li>
-                </ul>
-            </div>
-            <div class="family_site">
-                <a href="#none">FAMILY SITE</a>
-                <div class="list">
-                    <ul>
-                        <li><a href="http://wooribank.com" target="_blank">우리은행</a></li>
-                        <li><a href="http://wooricard.com" target="_blank">우리카드</a></li>
-                        <li><a href="http://www.wooriib.com" target="_blank">우리종합금융</a></li>
-                        <li><a href="http://www.woorifis.com" target="_blank">우리FIS</a></li>
-                        <li><a href="http://www.wfri.re.kr" target="_blank">우리금융경영연구소</a></li>
-                        <li><a href="http://www.wooricredit.com" target="_blank">우리신용정보</a></li>
-                        <li><a href="http://www.woorifs.co.kr" target="_blank">우리펀드서비스</a></li>
-                        <li><a href="http://www.kukjetrust.com" target="_blank">우리자산신탁</a></li>
-                        <li><a href="https://www.wooriam.kr" target="_blank">우리자산운용</a></li>
-                        <li><a href="http://www.wooriglobalam.com" target="_blank">우리글로벌자산운용</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="foot_logo">
-                <ul>
-                    <li><span class="woori"><span class="blind">우리자산신탁</span></span></li>
-                    <li><span class="lucestar"><span class="blind">루체스타</span></span></li>
-                </ul>
-            </div>
-            <div class="foot_con">
-                <p class="addr">(06160) 서울특별시 강남구 테헤란로 419. 강남파이낸스빌딩 20층<em>전화. 02-6202-3000</em><em>팩스. 02-6202-3010</em></p>
-                <p class="copy">COPYRIGHT © WOORI ASSET TRUST. LTD. ALL RIGHTS RESERVED</p>
-            </div>
-        </div>
-    </footer>
-    <!--// footer -->--%>
 
-<!-- //wrap -->
-<script src="/js/common.js"></script>
 
 <script>
     //슬라이드
