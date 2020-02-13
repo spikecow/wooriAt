@@ -22,18 +22,18 @@
       <div class="dep2">
         <a href="#none">CI 소개</a>
         <ul class="dep_list">
-          <li><a href="#none">회사개요</a></li>
-          <li><a href="#none">CI소개</a></li>
-          <li><a href="#none">경영현황</a></li>
-          <li><a href="#none">회사소식</a></li>
-          <li><a href="#none">채용정보</a></li>
-          <li><a href="#none">오시는 길</a></li>
+          <li><a href="/company/overview">회사개요</a></li>
+          <li><a href="/company/ci_manual">CI소개</a></li>
+          <li><a href="/company/news?menuCd=M&typeCd=01">경영현황</a></li>
+          <li><a href="/company/news?menuCd=C">회사소식</a></li>
+          <li><a href="/company/recruit">채용정보</a></li>
+          <li><a href="/company/location">오시는 길</a></li>
         </ul>
       </div>
       <div class="dep3">
         <ul>
-          <li><a href="#none" class="curr">CI Manual</a></li>
-          <li><a href="#none">CI 루체스타</a></li>
+          <li><a href="/company/ci_manual" class="curr">CI Manual</a></li>
+          <li><a href="/company/ci_lucestar">CI 루체스타</a></li>
         </ul>
       </div>
     </div>

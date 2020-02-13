@@ -7,12 +7,12 @@
 		<li>
 			<a href="#none">회사소개</a>
 			<ul class="dep2">
-				<li><a href="#none">회사개요</a></li>
-				<li><a href="#none">CI소개</a></li>
-				<li><a href="/com/news?menuCd=M&typeCd=01">경영현황</a></li>
-				<li><a href="/com/news?menuCd=C">회사소식</a></li>
-				<li><a href="#none">채용정보</a></li>
-				<li><a href="#none">오시는 길</a></li>
+				<li><a href="/company/overview">회사개요</a></li>
+				<li><a href="/company/ci_manual">CI소개</a></li>
+				<li><a href="/company/news?menuCd=M&typeCd=01">경영현황</a></li>
+				<li><a href="/company/news?menuCd=C">회사소식</a></li>
+				<li><a href="/company/recruit">채용정보</a></li>
+				<li><a href="/company/location">오시는 길</a></li>
 			</ul>
 		</li>
 		<li>

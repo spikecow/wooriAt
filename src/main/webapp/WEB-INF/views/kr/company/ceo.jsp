@@ -22,21 +22,21 @@
       <div class="dep2">
         <a href="#none">회사개요</a>
         <ul class="dep_list">
-          <li><a href="#none">회사개요</a></li>
-          <li><a href="#none">CI소개</a></li>
-          <li><a href="#none">경영현황</a></li>
-          <li><a href="#none">회사소식</a></li>
-          <li><a href="#none">채용정보</a></li>
-          <li><a href="#none">오시는 길</a></li>
+          <li><a href="/company/overview">회사개요</a></li>
+          <li><a href="/company/ci_manual">CI소개</a></li>
+          <li><a href="/company/news?menuCd=M&typeCd=01">경영현황</a></li>
+          <li><a href="/company/news?menuCd=C">회사소식</a></li>
+          <li><a href="/company/recruit">채용정보</a></li>
+          <li><a href="/company/location">오시는 길</a></li>
         </ul>
       </div>
       <div class="dep3">
         <ul>
-          <li><a href="#none">비전</a></li>
-          <li><a href="#none">연혁</a></li>
-          <li><a href="#none" class="curr">CEO 인사말</a></li>
-          <li><a href="#none">조직도</a></li>
-          <li><a href="#none">윤리강령</a></li>
+          <li><a href="/company/overview">비전</a></li>
+          <li><a href="/company/history">연혁</a></li>
+          <li><a href="/company/ceo" class="curr">CEO 인사말</a></li>
+          <li><a href="/company/organization">조직도</a></li>
+          <li><a href="/company/ehtics">윤리강령</a></li>
         </ul>
       </div>
     </div>

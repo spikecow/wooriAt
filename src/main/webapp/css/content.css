@@ -503,7 +503,7 @@
 }
 
 .terms #content {
-  background: url(//resource/images/content/terms_bg.jpg) repeat-x 50% 100%;
+  background: url(/images/content/terms_bg.jpg) repeat-x 50% 100%;
 }
 
 .terms__link {
@@ -549,7 +549,7 @@
 
 .security__head {
   height: 286px;
-  background: url(//resource/images/content/security01.jpg) no-repeat 799px 96px;
+  background: url(/images/content/security01.jpg) no-repeat 799px 96px;
 }
 
 .security__head .txt-list strong {
@@ -583,7 +583,7 @@
   margin-right: 6px;
   width: 16px;
   height: 16px;
-  background: url(//resource/images/common/ico_declaration.png) no-repeat 0 0;
+  background: url(/images/common/ico_declaration.png) no-repeat 0 0;
 }
 
 .security__btn--customer:before {
@@ -594,7 +594,7 @@
   margin-right: 6px;
   width: 14px;
   height: 13px;
-  background: url(//resource/images/common/ico_customer.png) no-repeat 0 0;
+  background: url(/images/common/ico_customer.png) no-repeat 0 0;
 }
 
 /* 연혁 */
@@ -735,7 +735,7 @@
   position: relative;
   width: 100%;
   height: 458px;
-  background: url(//resource/images/content/ceo.png) no-repeat 0 0;
+  background: url(/images/content/ceo.png) no-repeat 0 0;
 }
 
 .ceo__title {
