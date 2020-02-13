@@ -38,16 +38,16 @@
 				<a href="#none">진행상황 전체</a>
 				<ul class="sort_list">
 					<li><a href="/item/vendue/list">진행상황 전체</a></li>
-					<li><a href="/item/vendue/list?sortStatus=진행">진행</a></li>
-					<li><a href="/item/vendue/list?sortStatus=중지">중지</a></li>
-					<li><a href="/item/vendue/list?sortStatus=취소">취소</a></li>
-					<li><a href="/item/vendue/list?sortStatus=낙찰">낙찰</a></li>
-					<li><a href="/item/vendue/list?sortStatus=일부낙찰">일부낙찰</a></li>
-					<li><a href="/item/vendue/list?sortStatus=공지">공지</a></li>
-					<li><a href="/item/vendue/list?sortStatus=유찰">유찰</a></li>
-					<li><a href="/item/vendue/list?sortStatus=종료">종료</a></li>
-					<li><a href="/item/vendue/list?sortStatus=수의계약진행">수의계약진행</a></li>
-					<li><a href="/item/vendue/list?sortStatus=수의계약완료">수의계약완료</a></li>
+					<li><a href="/item/vendue/list?sortStatus=%EC%A7%84%ED%96%89">진행</a></li>
+					<li><a href="/item/vendue/list?sortStatus=%EC%A4%91%EC%A7%80">중지</a></li>
+					<li><a href="/item/vendue/list?sortStatus=%EC%B7%A8%EC%86%8C">취소</a></li>
+					<li><a href="/item/vendue/list?sortStatus=%EB%82%99%EC%B0%B0">낙찰</a></li>
+					<li><a href="/item/vendue/list?sortStatus=%EC%9D%BC%EB%B6%80%EB%82%99%EC%B0%B0">일부낙찰</a></li>
+					<li><a href="/item/vendue/list?sortStatus=%EA%B3%B5%EC%A7%80">공지</a></li>
+					<li><a href="/item/vendue/list?sortStatus=%EC%9C%A0%EC%B0%B0">유찰</a></li>
+					<li><a href="/item/vendue/list?sortStatus=%EC%A2%85%EB%A3%8C">종료</a></li>
+					<li><a href="/item/vendue/list?sortStatus=%EC%88%98%EC%9D%98%EA%B3%84%EC%95%BD%EC%A7%84%ED%96%89">수의계약진행</a></li>
+					<li><a href="/item/vendue/list?sortStatus=%EC%88%98%EC%9D%98%EA%B3%84%EC%95%BD%EC%99%84%EB%A3%8C">수의계약완료</a></li>
 				</ul>
 			</div>
 			<!-- //sorting -->
