@@ -41,7 +41,7 @@
 					<div class="board_view_body">
 						<p style="text-align:center;">
 							<img src="http://images.wooriat.com/Photo/${data.img}">
-							${data.content}
+							<c:out value="${data.content}" escapeXml="false"/>
 						<p>
 					</div>
 					<div class="board_view_pg">

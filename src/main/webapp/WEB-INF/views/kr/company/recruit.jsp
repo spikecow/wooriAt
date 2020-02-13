@@ -46,7 +46,7 @@
             <h4>채용정보</h4>
             <img src="/images/content/recruit01.jpg" alt="">
             <div class="recruit">
-                <a href="https://www.woorifg.com/kor/recruit/recruit-announcement/list.do" target="_blank" class="recruit__btn">우리금융그룹 인재채용 페이지 바로가기</a>
+                <a href="https://www.woorifg.com/kor/recruit/recruit-announcement/list.do" target="_blank" class="recruit__btn">우리자산신탁 인재채용 페이지 바로가기</a>
             </div>
             <!-- //컨텐츠 영역 -->
         </div>

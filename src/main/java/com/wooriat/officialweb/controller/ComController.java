@@ -8,6 +8,7 @@ import com.wooriat.officialweb.service.NoticeService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
+import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
@@ -20,6 +21,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.server.ServletServerHttpResponse;
 import org.springframework.mobile.device.Device;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -27,11 +29,14 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 @Slf4j
 @Controller
 @RequestMapping(value = "/company")
 @RequiredArgsConstructor
-public class CompanyController {
+public class ComController {
 
 	private final NoticeService noticeService;
 
@@ -98,10 +103,12 @@ public class CompanyController {
 
         Optional<TbNotice> tbNotice = noticeService.getDetail(seqNo);
 
+        NoticeDto noticeDto = noticeService.getDetail((int)seqNo);
+
         ModelAndView modelAndView = new ModelAndView();
 
         model.addAttribute("menuCd", menuCd);
-        model.addAttribute("data", tbNotice.get());
+        model.addAttribute("data", noticeDto);
 
         if(StringUtils.equalsIgnoreCase(menuCd, "C")) {
             modelAndView.setViewName("kr/company/news_view");
@@ -193,5 +200,12 @@ public class CompanyController {
         modelAndView.setViewName("kr/company/location");
         return modelAndView;
     }
+
+    @PostMapping("/download")
+    public void downloadController(@RequestParam Map<String, Object> params, HttpServletResponse res) {
+
+
+    }
+
 
 }

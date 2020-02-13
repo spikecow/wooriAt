@@ -91,17 +91,17 @@
                     우리자산신탁의 신탁상품을 소개
                 </h3>
                 <div class="main-trust__list">
-                    <a href="" class="main-trust__list-item main-trust__list-item--ico01">관리형 토지신탁</a>
-                    <a href="" class="main-trust__list-item main-trust__list-item--ico02">분양관리신탁</a>
-                    <a href="" class="main-trust__list-item main-trust__list-item--ico03">담보신탁</a>
-                    <a href="" class="main-trust__list-item main-trust__list-item--ico04">처분신탁</a>
-                    <a href="" class="main-trust__list-item main-trust__list-item--ico05">관리신탁</a>
-                    <a href="" class="main-trust__list-item main-trust__list-item--ico06">대리사무</a>
-                    <a href="" class="main-trust__list-item main-trust__list-item--ico07">도시개발사업</a>
-                    <a href="" class="main-trust__list-item main-trust__list-item--ico08">PFV사업</a>
-                    <a href="" class="main-trust__list-item main-trust__list-item--ico09">자산관리</a>
-                    <a href="" class="main-trust__list-item main-trust__list-item--ico10">부동산금융</a>
-                    <a href="" class="main-trust__list-item main-trust__list-item--ico11">토지신탁</a>
+                    <a href="/trust/manage_land" class="main-trust__list-item main-trust__list-item--ico01">관리형 토지신탁</a>
+                    <a href="/trust/sale" class="main-trust__list-item main-trust__list-item--ico02">분양관리신탁</a>
+                    <a href="/trust/security" class="main-trust__list-item main-trust__list-item--ico03">담보신탁</a>
+                    <a href="/trust/disposal" class="main-trust__list-item main-trust__list-item--ico04">처분신탁</a>
+                    <a href="/trust/manage" class="main-trust__list-item main-trust__list-item--ico05">관리신탁</a>
+                    <a href="/trust/agency" class="main-trust__list-item main-trust__list-item--ico06">대리사무</a>
+                    <a href="/trust/city" class="main-trust__list-item main-trust__list-item--ico07">도시개발사업</a>
+                    <a href="/trust/pfv" class="main-trust__list-item main-trust__list-item--ico08">PFV사업</a>
+                    <a href="/trust/assets" class="main-trust__list-item main-trust__list-item--ico09">자산관리</a>
+                    <a href="/trust/finance" class="main-trust__list-item main-trust__list-item--ico10">부동산금융</a>
+                    <a href="/trust/land" class="main-trust__list-item main-trust__list-item--ico11">토지신탁</a>
                 </div>
             </div>
             <!-- //신탁상품 -->
