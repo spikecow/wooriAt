@@ -1,19 +1,22 @@
 package com.wooriat.officialweb.controller;
 
-import com.wooriat.officialweb.service.MainService;
+import com.wooriat.officialweb.domain.KoaSale;
+import com.wooriat.officialweb.domain.ShotSell;
+import com.wooriat.officialweb.service.SaleService;
+import com.wooriat.officialweb.service.ShortSellService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.HashMap;
 import java.util.Map;
 
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.mobile.device.Device;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 /** ========================================================================================
@@ -33,13 +36,22 @@ import org.springframework.web.servlet.ModelAndView;
 @RequiredArgsConstructor
 public class MainController {
 
+	private final SaleService saleService;
+
+	private final ShortSellService shortSellService;
+
 	@GetMapping("/")
 	public ModelAndView main(@RequestParam Map<String, Object> params,Device device) {
 		ModelAndView modelAndView = new ModelAndView();
 
-		/*String langCd = (String) params.get("langCd") == null  ? "KR" : (String) params.get("langCd");
-		modelAndView.addObject("langCd", langCd);*/
+		Pageable pageable = PageRequest.of(1, 3, new Sort(Sort.Direction.DESC, "bunDate"));
+		Pageable pageable2 = PageRequest.of(1, 7, new Sort(Sort.Direction.DESC, "regDate").and(new Sort(Sort.Direction.DESC, "sellId")) );
 
+		Page<KoaSale> saleList = saleService.getList(params, pageable); //분양
+		Page<ShotSell> shotSellList = shortSellService.getList(params, pageable2); //공매물
+
+		modelAndView.addObject("saleList", saleList);
+		modelAndView.addObject("shotSellList", shotSellList);
 
 		modelAndView.setViewName("kr/main/main");
 

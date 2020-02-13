@@ -89,7 +89,7 @@
 						</td>
 						<td>
 							<fmt:parseDate value="${ list.regDate }" pattern="yyyy-MM-dd'T'HH:mm" var="regDate" type="both" />
-							<fmt:formatDate pattern="yyyy-MM-dd" value="${ regDate }" />
+							<fmt:formatDate pattern="yyyy. MM. dd" value="${ regDate }" />
 						</td>
 					</tr>
 					</c:forEach>

@@ -90,7 +90,7 @@ html {
   width: 39px;
   height: 25px;
   margin-top: -12.5px;
-  background: url(../../resource/images/main/arrow03.png) no-repeat 0 0;
+  background: url(/images/main/arrow03.png) no-repeat 0 0;
 }
 
 .main-slide .swiper-button-prev:after {
@@ -106,7 +106,7 @@ html {
   width: 39px;
   height: 25px;
   margin-top: 12.5px;
-  background: url(../../resource/images/main/arrow03.png) no-repeat 0 100%;
+  background: url(/images/main/arrow03.png) no-repeat 0 100%;
 }
 
 .main-slide .swiper-button-next:after {
@@ -118,7 +118,7 @@ html {
   width: 1920px;
   margin-left: -396px;
   padding-bottom: 94px;
-  background: #f4f4f4 url(../../resource/images/main/main_auction_bg.jpg) repeat-x 50% 100%;
+  background: #f4f4f4 url(/images/main/main_auction_bg.jpg) repeat-x 50% 100%;
 }
 
 .main-auction__title {
@@ -234,7 +234,7 @@ html {
   width: 1920px;
   margin-left: -396px;
   height: 700px;
-  background: url(../../resource/images/main/main_trust_bg.jpg) no-repeat 50% 50%;
+  background: url(/images/main/main_trust_bg.jpg) no-repeat 50% 50%;
 }
 
 .main-trust__title {
@@ -298,62 +298,62 @@ html {
   transition: margin 0.1s ease, -webkit-transform 0.2s ease;
   transition: transform 0.2s ease, margin 0.1s ease;
   transition: transform 0.2s ease, margin 0.1s ease, -webkit-transform 0.2s ease;
-  background: url(../../resource/images/main/main_trust_ico01.png) no-repeat 50% 50%;
+  background: url(/images/main/main_trust_ico01.png) no-repeat 50% 50%;
   background-size: 70px 70px;
 }
 
 .main-trust__list-item--ico01:before {
-  background: url(../../resource/images/main/main_trust_ico01.png) no-repeat 50% 50%;
+  background: url(/images/main/main_trust_ico01.png) no-repeat 50% 50%;
   background-size: 70px 70px;
 }
 
 .main-trust__list-item--ico02:before {
-  background: url(../../resource/images/main/main_trust_ico02.png) no-repeat 50% 50%;
+  background: url(/images/main/main_trust_ico02.png) no-repeat 50% 50%;
   background-size: 70px 70px;
 }
 
 .main-trust__list-item--ico03:before {
-  background: url(../../resource/images/main/main_trust_ico03.png) no-repeat 50% 50%;
+  background: url(/images/main/main_trust_ico03.png) no-repeat 50% 50%;
   background-size: 70px 70px;
 }
 
 .main-trust__list-item--ico04:before {
-  background: url(../../resource/images/main/main_trust_ico04.png) no-repeat 50% 50%;
+  background: url(/images/main/main_trust_ico04.png) no-repeat 50% 50%;
   background-size: 70px 70px;
 }
 
 .main-trust__list-item--ico05:before {
-  background: url(../../resource/images/main/main_trust_ico05.png) no-repeat 50% 50%;
+  background: url(/images/main/main_trust_ico05.png) no-repeat 50% 50%;
   background-size: 70px 70px;
 }
 
 .main-trust__list-item--ico06:before {
-  background: url(../../resource/images/main/main_trust_ico06.png) no-repeat 50% 50%;
+  background: url(/images/main/main_trust_ico06.png) no-repeat 50% 50%;
   background-size: 70px 70px;
 }
 
 .main-trust__list-item--ico07:before {
-  background: url(../../resource/images/main/main_trust_ico07.png) no-repeat 50% 50%;
+  background: url(/images/main/main_trust_ico07.png) no-repeat 50% 50%;
   background-size: 70px 70px;
 }
 
 .main-trust__list-item--ico08:before {
-  background: url(../../resource/images/main/main_trust_ico08.png) no-repeat 50% 50%;
+  background: url(/images/main/main_trust_ico08.png) no-repeat 50% 50%;
   background-size: 70px 70px;
 }
 
 .main-trust__list-item--ico09:before {
-  background: url(../../resource/images/main/main_trust_ico09.png) no-repeat 50% 50%;
+  background: url(/images/main/main_trust_ico09.png) no-repeat 50% 50%;
   background-size: 70px 70px;
 }
 
 .main-trust__list-item--ico10:before {
-  background: url(../../resource/images/main/main_trust_ico10.png) no-repeat 50% 50%;
+  background: url(/images/main/main_trust_ico10.png) no-repeat 50% 50%;
   background-size: 70px 70px;
 }
 
 .main-trust__list-item--ico11:before {
-  background: url(../../resource/images/main/main_trust_ico11.png) no-repeat 50% 50%;
+  background: url(/images/main/main_trust_ico11.png) no-repeat 50% 50%;
   background-size: 70px 70px;
 }
 
@@ -473,7 +473,7 @@ html {
   height: 11px;
   margin-top: -5.5px;
   margin-left: -3.5px;
-  background: url(../../resource/images/main/arrow02.png) no-repeat 100% 0;
+  background: url(/images/main/arrow02.png) no-repeat 100% 0;
 }
 
 .main-parcelout__slide .swiper-button-prev {
@@ -506,7 +506,7 @@ html {
   height: 11px;
   margin-top: -5.5px;
   margin-left: -3.5px;
-  background: url(../../resource/images/main/arrow02.png) no-repeat 0 0;
+  background: url(/images/main/arrow02.png) no-repeat 0 0;
 }
 
 .main-parcelout__slide .swiper-pagination {
@@ -690,7 +690,7 @@ html {
   left: 13px;
   width: 14px;
   height: 8px;
-  background: url(../../resource/images/main/arrow.png) no-repeat 0 0;
+  background: url(/images/main/arrow.png) no-repeat 0 0;
 }
 
 .main-notice .swiper-button-prev {
@@ -710,5 +710,5 @@ html {
   left: 13px;
   width: 14px;
   height: 8px;
-  background: url(../../resource/images/main/arrow.png) no-repeat 0 100%;
+  background: url(/images/main/arrow.png) no-repeat 0 100%;
 }

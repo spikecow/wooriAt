@@ -41,8 +41,8 @@
 					<div class="board_view_head">
 						<span class="tit">${data.newsTitle}</span>
 						<span class="date">
-							<fmt:parseDate value="${ list.regDate }" pattern="yyyy-MM-dd'T'HH:mm" var="regDate" type="both" />
-							<fmt:formatDate pattern="yyyy-MM-dd" value="${ regDate }" />
+							<fmt:parseDate value="${ data.regDate }" pattern="yyyy-MM-dd'T'HH:mm" var="regDate" type="both" />
+							<fmt:formatDate pattern="yyyy. MM. dd" value="${ regDate }" />
 						</span>
 					</div>
 					<!-- 표 -->
@@ -56,7 +56,13 @@
 							<tbody>
 							<tr>
 								<th>진행상태</th>
-								<td class="state"><span class="ing">${data.sortStatus}</span></td>
+
+								<td class="state">
+									<c:if test="${data.sortStatus eq '진행'} "><span class="ing"></c:if>
+
+										${data.sortStatus}
+									</span>
+								</td>
 								<!--<td class="state"><span>중지</span></td>-->
 								<!--<td class="state"><span class="fin">낙찰</span></td>-->
 							</tr>
