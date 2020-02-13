@@ -31,8 +31,8 @@ spring:
     properties:
       hibernate:
         jdbc.lob.non_contextual_creation: true
-#        show_sql: true # systemOut log
-#        format_sql: true
+        show_sql: true # systemOut log
+        format_sql: true
 
 
 build:

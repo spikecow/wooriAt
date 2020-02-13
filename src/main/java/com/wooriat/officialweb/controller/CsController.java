@@ -1,6 +1,7 @@
 package com.wooriat.officialweb.controller;
 
 import com.wooriat.officialweb.dto.QuestionDto;
+import com.wooriat.officialweb.service.QaService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -16,7 +17,7 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class CsController {
 
-    /*private final QaService qaService;
+    private final QaService qaService;
 
     @GetMapping("/customer")
     @ResponseBody
@@ -35,7 +36,6 @@ public class CsController {
 
         try {
             qaService.insert(questionDto);
-            //qaService.mailSend(questionDto);
             map.put("status", "success");
         }catch(Exception e) {
             map.put("status", "fail");
@@ -44,7 +44,7 @@ public class CsController {
         }
 
         return map;
-    }*/
+    }
 
     @GetMapping("/terms")
     @ResponseBody
