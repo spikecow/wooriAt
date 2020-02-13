@@ -10,7 +10,7 @@
 				<li><a href="#none">회사개요</a></li>
 				<li><a href="#none">CI소개</a></li>
 				<li><a href="#none">경영현황</a></li>
-				<li><a href="#none">회사소식</a></li>
+				<li><a href="/com/news?menuCd=C">회사소식</a></li>
 				<li><a href="#none">채용정보</a></li>
 				<li><a href="#none">오시는 길</a></li>
 			</ul>
@@ -34,8 +34,8 @@
 		<li>
 			<a href="#none">물건정보</a>
 			<ul class="dep2">
-				<li><a href="#none">분양물건정보</a></li>
-				<li><a href="#none">공매물건정보</a></li>
+				<li><a href="/item/sale/list">분양물건정보</a></li>
+				<li><a href="/item/vendue/list">공매물건정보</a></li>
 			</ul>
 		</li>
 		<li>

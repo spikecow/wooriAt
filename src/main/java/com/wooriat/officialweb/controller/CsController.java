@@ -1,18 +1,14 @@
 package com.wooriat.officialweb.controller;
 
 import com.wooriat.officialweb.dto.QuestionDto;
-import com.wooriat.officialweb.service.QaService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
 
 @Slf4j
 @Controller
@@ -20,7 +16,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class CsController {
 
-    private final QaService qaService;
+    /*private final QaService qaService;
 
     @GetMapping("/customer")
     @ResponseBody
@@ -48,5 +44,5 @@ public class CsController {
         }
 
         return map;
-    }
+    }*/
 }

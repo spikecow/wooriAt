@@ -16,8 +16,6 @@
 	</script>
 </head>
 <body>
-
-	<!-- container -->
 	<div id="container" class="company"><!-- 각 메뉴명 고유 클래스 삽입 -->
 		<!-- title area -->
 		<div class="title_area">
@@ -30,47 +28,54 @@
 		<!-- content -->
 		<div id="content">
 			<div class="content_wrap">
-				<h4>회사소식</h4> 
+				<h4>Photo 소식</h4>
+				<!-- sorting -->
+				<div class="board_sorting w150">
+					<a href="#none">연도 전체</a>
+					<ul class="sort_list">
+						<li><a href="#none">연도 전체</a></li>
+						<li><a href="#none">2019</a></li>
+						<li><a href="#none">2018</a></li>
+						<li><a href="#none">2017</a></li>
+						<li><a href="#none">2016</a></li>
+						<li><a href="#none">2015</a></li>
+						<li><a href="#none">2014</a></li>
+						<li><a href="#none">2013</a></li>
+						<li><a href="#none">2012</a></li>
+						<li><a href="#none">2011</a></li>
+						<li><a href="#none">2010</a></li>
+						<li><a href="#none">2009</a></li>
+						<li><a href="#none">2008</a></li>
+						<li><a href="#none">2007</a></li>
+					</ul>
+				</div>
+				<!-- //sorting -->
 				<!-- 검색 -->
 				<div class="board_search">
 					<input type="text" class="input" title="검색어 입력" placeholder=""><button type="button" class="btn_search" name="btnViewDetail"><span class="blind">검색</span></button>
 				</div>
 				<!-- //검색 -->
 				<!-- 목록 -->
-				<div class="board_list_type1">
-					<table>
-						<caption>회사소식 목록</caption>
-						<colgroup>
-							<col width="100px">
-							<col width="870px">
-							<col width="*">
-						</colgroup>
-						<thead>
-							<tr>
-								<th>번호</th>
-								<th>제목</th>
-								<th>등록일</th>
-							</tr>
-						</thead>
-						<tbody>
-							<c:forEach items="${list.content}" var="list" varStatus="status">
-							<tr>
-								<td>${(totalCount - status.index) - ( (page - 1)  *  10 ) }</td>
-								<td class="tit"><a href="/com/news/${ list.seqNo }/${list.menuCd}">${list.title}</a></td>
-								<td><fmt:parseDate value="${ list.regDate }" pattern="yyyy-MM-dd'T'HH:mm" var="cretDtm" type="both" />
+				<div class="board_list_type3">
+ 					<ul>
+						<c:forEach items="${list.content}" var="list" varStatus="status">
+						<li>
+							<a href="/com/news/${list.seqNo}/${menuCd}" class="thum"><img src="http://images.wooriat.com/Photo/${list.img}" alt=""></a>
+							<span class="cont">
+								<a href="/com/news/${list.seqNo}/${menuCd}" class="tit">${list.title}</a>
+								<span class="date">
+									<fmt:parseDate value="${ list.regDate }" pattern="yyyy-MM-dd'T'HH:mm" var="cretDtm" type="both" />
 									<fmt:formatDate pattern="yyyy.MM.dd" value="${ cretDtm }" />
-								</td>
-							</tr>
-							</c:forEach>
-						</tbody>
-					</table>	 
+								</span>
+							</span>
+						</li>
+						</c:forEach>
+					</ul>
 				</div>
 				<!-- //목록 -->
 				<!-- 페이징 -->
 				<div class="paging">
-					<div class="paging">
-						${pagingHtml}
-					</div>
+					${pagingHtml}
 				</div>
 				<!-- //페이징 -->
 			</div>
@@ -78,9 +83,10 @@
 		<!-- //content -->
 	</div> 
 	<!-- //container -->
+
+
 </body>
 </html>
-
 <script type="text/javascript">
 
 

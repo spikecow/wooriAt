@@ -29,10 +29,7 @@
 		<!-- content -->
 		<div id="content">
 			<div class="content_wrap">
-				<!-- 컨텐츠 영역 -->
-				<br><br><br><br><br><br><br><br><br><br>
-				컨텐츠 영역입니다.
-				<br><br><br><br><br><br><br><br><br><br>
+				${data.content}
 				<!-- //컨텐츠 영역 -->
 			</div>
 		</div>
