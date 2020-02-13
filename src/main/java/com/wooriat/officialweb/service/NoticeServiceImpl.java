@@ -2,6 +2,7 @@ package com.wooriat.officialweb.service;
 
 import com.wooriat.officialweb.domain.ShotSell;
 import com.wooriat.officialweb.domain.TbNotice;
+import com.wooriat.officialweb.dto.NoticeDto;
 import com.wooriat.officialweb.repository.NoticeRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -44,6 +45,11 @@ public class NoticeServiceImpl implements NoticeService{
         }
 
         return noticeList;
+    }
+
+    @Override
+    public NoticeDto getDetail(int id) {
+        return new NoticeDto(noticeRepository.findById((long) id));
     }
 
     @Override

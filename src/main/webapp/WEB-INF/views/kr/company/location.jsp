@@ -131,7 +131,7 @@
 
 			<div class="location-foot">
 				<p>
-					<strong>홈페이지</strong> : <a href="http://www.kukjetrust.com" target="_blank">http://www.kukjetrust.com</a><span>/</span><strong>대표 이메일</strong> : <a href="mailto:webplanner@kukjetrust.com">webplanner@kukjetrust.com</a>
+					<strong>홈페이지</strong> : <a href="http://www.wooriat.com" target="_blank">http://www.wooriat.com</a><span>/</span><strong>대표 이메일</strong> : <a href="mailto:webplanner@wooriat.com">webplanner@wooriat.com</a>
 				</p>
 			</div>
 			<!-- //컨텐츠 영역 -->

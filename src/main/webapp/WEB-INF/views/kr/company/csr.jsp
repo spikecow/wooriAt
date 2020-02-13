@@ -61,9 +61,9 @@
  					<ul>
 						<c:forEach items="${list.content}" var="list" varStatus="status">
 						<li>
-							<a href="/com/news/${list.seqNo}/${menuCd}" class="thum"><img src="http://images.wooriat.com/Social/${list.img}" alt=""></a>
+							<a href="/company/news/${list.seqNo}/${menuCd}" class="thum"><img src="http://images.wooriat.com/Social/${list.img}" alt=""></a>
 							<span class="cont">
-								<a href="/com/news/${list.seqNo}/${menuCd}" class="tit">${list.title}</a>
+								<a href="/company/news/${list.seqNo}/${menuCd}" class="tit">${list.title}</a>
 								<span class="date">
 									<fmt:parseDate value="${ list.regDate }" pattern="yyyy-MM-dd'T'HH:mm" var="cretDtm" type="both" />
 									<fmt:formatDate pattern="yyyy.MM.dd" value="${ cretDtm }" />
@@ -95,7 +95,7 @@
 
 		$("#searchWord").keydown(function(key) {
 			if (key.keyCode == 13) {
-				location.href = "/com/news?searchWord="+ $('#searchWord').val();
+				location.href = "/company/news?searchWord="+ $('#searchWord').val();
 			}
 		});
 	});
@@ -111,12 +111,12 @@
 	$('.paging span.num a').click(function(){
 		var text = Number(this.text);
 		page = Number(text);
-		location.href ="/com/news?page="+ page + "&menuCd="+menuCd +  "&searchWord="+ searchWord ;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd +  "&searchWord="+ searchWord ;
 	});
 
 	$('.paging a.first').click(function(){
 		page = 1;
-		location.href ="/com/news?page="+ page + "&menuCd="+menuCd +  "&searchWord="+ searchWord ;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd +  "&searchWord="+ searchWord ;
 
 	});
 
@@ -126,7 +126,7 @@
 			return false;
 		}
 		page = totalPage;
-		location.href ="/com/news?page="+ page + "&menuCd="+menuCd +  "&searchWord="+ searchWord ;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd +  "&searchWord="+ searchWord ;
 	});
 
 	$('.paging a.prev').click(function(){
@@ -134,7 +134,7 @@
 		if(page < 0){
 			page =1;
 		}
-		location.href ="/com/news?page="+ page + "&menuCd="+menuCd + "&searchWord="+ searchWord ;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd + "&searchWord="+ searchWord ;
 	});
 
 	$('.paging a.next').click(function(){
@@ -149,11 +149,11 @@
 
 		// var text = Number(this.text);
 		// page = Number(text) -1;
-		location.href ="/com/news?page="+ page + "&menuCd="+menuCd + "&searchWord="+ searchWord ;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd + "&searchWord="+ searchWord ;
 	});
 
 	$('button[name=btnViewDetail]').on('click', function () {
-		location.href = "/com/news?menuCd=" + menuCd + "searchWord="+ $('#searchWord').val();
+		location.href = "/company/news?menuCd=" + menuCd + "searchWord="+ $('#searchWord').val();
 	});
 
 

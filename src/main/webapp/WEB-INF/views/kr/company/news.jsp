@@ -56,7 +56,7 @@
 							<c:forEach items="${list.content}" var="list" varStatus="status">
 							<tr>
 								<td>${(totalCount - status.index) - ( (page - 1)  *  10 ) }</td>
-								<td class="tit"><a href="/com/news/${ list.seqNo }/${list.menuCd}">${list.title}</a></td>
+								<td class="tit"><a href="/company/news/${ list.seqNo }/${list.menuCd}">${list.title}</a></td>
 								<td><fmt:parseDate value="${ list.regDate }" pattern="yyyy-MM-dd'T'HH:mm" var="cretDtm" type="both" />
 									<fmt:formatDate pattern="yyyy.MM.dd" value="${ cretDtm }" />
 								</td>
@@ -88,7 +88,7 @@
 
 		$("#searchWord").keydown(function(key) {
 			if (key.keyCode == 13) {
-				location.href = "/com/news?searchWord="+ $('#searchWord').val();
+				location.href = "/company/news?searchWord="+ $('#searchWord').val();
 			}
 		});
 	});
@@ -104,12 +104,12 @@
 	$('.paging span.num a').click(function(){
 		var text = Number(this.text);
 		page = Number(text);
-		location.href ="/com/news?page="+ page + "&menuCd="+menuCd +  "&searchWord="+ searchWord ;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd +  "&searchWord="+ searchWord ;
 	});
 
 	$('.paging a.first').click(function(){
 		page = 1;
-		location.href ="/com/news?page="+ page + "&menuCd="+menuCd +  "&searchWord="+ searchWord ;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd +  "&searchWord="+ searchWord ;
 
 	});
 
@@ -119,7 +119,7 @@
 			return false;
 		}
 		page = totalPage;
-		location.href ="/com/news?page="+ page + "&menuCd="+menuCd +  "&searchWord="+ searchWord ;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd +  "&searchWord="+ searchWord ;
 	});
 
 	$('.paging a.prev').click(function(){
@@ -127,7 +127,7 @@
 		if(page < 0){
 			page =1;
 		}
-		location.href ="/com/news?page="+ page + "&menuCd="+menuCd + "&searchWord="+ searchWord ;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd + "&searchWord="+ searchWord ;
 	});
 
 	$('.paging a.next').click(function(){
@@ -142,11 +142,11 @@
 
 		// var text = Number(this.text);
 		// page = Number(text) -1;
-		location.href ="/com/news?page="+ page + "&menuCd="+menuCd + "&searchWord="+ searchWord ;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd + "&searchWord="+ searchWord ;
 	});
 
 	$('button[name=btnViewDetail]').on('click', function () {
-		location.href = "/com/news?menuCd=" + menuCd + "searchWord="+ $('#searchWord').val();
+		location.href = "/company/news?menuCd=" + menuCd + "searchWord="+ $('#searchWord').val();
 	});
 
 

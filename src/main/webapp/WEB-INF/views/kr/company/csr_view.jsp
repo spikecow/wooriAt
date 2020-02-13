@@ -42,16 +42,16 @@
 					<div class="board_view_body">
 						<p style="text-align:center;">
 							<img src="http://images.wooriat.com/Social/${data.img}">
-							${data.content}
+							<c:out value="${data.content}" escapeXml="false"/>
 						<p>
 					</div>
 					<div class="board_view_pg">
 						<ul>
 							<li class="prev">
-								<strong>이전글</strong><span><a href="/com/news/${prevDetail.seqNo}/${menuCd}">${prevDetail.title}</a></span>
+								<strong>이전글</strong><span><a href="/company/news/${prevDetail.seqNo}/${menuCd}">${prevDetail.title}</a></span>
 							</li>
 							<li class="next">
-								<strong>다음글</strong><span><a href="/com/news/${nextDetail.seqNo}/${menuCd}">${nextDetail.title}</a></span>
+								<strong>다음글</strong><span><a href="/company/news/${nextDetail.seqNo}/${menuCd}">${nextDetail.title}</a></span>
 							</li>	
 						</ul>
 					</div>
@@ -59,7 +59,7 @@
 				<!-- //상세 -->
 				<!-- 버튼 -->
 				<div class="board_btn_area">
-					<a href="/com/news?menuCd=${menuCd}" class="btn_list"><span>목록</span></a>
+					<a href="/company/news?menuCd=${menuCd}" class="btn_list"><span>목록</span></a>
 				</div>
 				<!-- //버튼 -->
 			</div>

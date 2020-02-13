@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+	<script src="/js/lib/jquery.fileDownload.js"></script>
 	<script type="text/javascript">
 
 		var tabIdx = parseInt('${typeCd}');
@@ -43,11 +44,11 @@
 				<div class="tab_type1 tab_wrap">
 					<!-- tab menu -->
 					<ul class="tab_menu">
-						<li class="tab_btn"><a href="/com/news?menuCd=M&typeCd=01">수시공시</a></li>
-						<li class="tab_btn"><a href="/com/news?menuCd=M&typeCd=02">영업보고</a></li>
-						<li class="tab_btn"><a href="/com/news?menuCd=M&typeCd=03">영업순자본비율</a></li>
-						<li class="tab_btn"><a href="/com/news?menuCd=M&typeCd=04">감시보고서</a></li>
-						<li class="tab_btn"><a href="/com/news?menuCd=M&typeCd=05">경영공시</a></li>
+						<li class="tab_btn"><a href="/company/news?menuCd=M&typeCd=01">수시공시</a></li>
+						<li class="tab_btn"><a href="/company/news?menuCd=M&typeCd=02">영업보고</a></li>
+						<li class="tab_btn"><a href="/company/news?menuCd=M&typeCd=03">영업순자본비율</a></li>
+						<li class="tab_btn"><a href="/company/news?menuCd=M&typeCd=04">감시보고서</a></li>
+						<li class="tab_btn"><a href="/company/news?menuCd=M&typeCd=05">경영공시</a></li>
 					</ul>
 					<!-- tab menu -->
 					<!-- tab cont -->
@@ -75,7 +76,7 @@
 									<tr>
 										<td>${(totalCount - status.index) - ( (page - 1)  *  10 ) }</td>
 										<td class="tit2"><a href="#none">${list.title}</a></td>
-										<td class="file"><a href="http://images.wooriat.com/Government/${list.img}" class="btn_m pdf" target="_blank"><span>PDF 보기</span></a><a href="#none" class="btn_m down"><span>다운로드 받기</span></a></td>
+										<td class="file"><a href="http://images.wooriat.com/Government/${list.img}" class="btn_m pdf" target="_blank"><span>PDF 보기</span></a><a href="javascript:download('http://images.wooriat.com/Government/${fn:replace(list.img, ' ', '%20')}');" class="btn_m down"><span>다운로드 받기</span></a></td>
 										<td>
 											<fmt:parseDate value="${ list.regDate }" pattern="yyyy-MM-dd'T'HH:mm" var="cretDtm" type="both" />
 											<fmt:formatDate pattern="yyyy.MM.dd" value="${ cretDtm }" />
@@ -100,6 +101,8 @@
 		</div>
 		<!-- //content -->
 	</div>
+	<iframe id="fileDown" style='visibility:hidden' src="" width="1" height="1"></iframe>
+
 </body>
 </html>
 <script type="text/javascript">
@@ -109,7 +112,7 @@
 
 		$("#searchWord").keydown(function(key) {
 			if (key.keyCode == 13) {
-				location.href = "/com/news?searchWord="+ $('#searchWord').val();
+				location.href = "/company/news?searchWord="+ $('#searchWord').val();
 			}
 		});
 	});
@@ -125,12 +128,12 @@
 	$('.paging span.num a').click(function(){
 		var text = Number(this.text);
 		page = Number(text);
-		location.href ="/com/news?page="+ page + "&menuCd="+menuCd +  "&typeCd=" + typeCd;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd +  "&typeCd=" + typeCd;
 	});
 
 	$('.paging a.first').click(function(){
 		page = 1;
-		location.href ="/com/news?page="+ page + "&menuCd="+menuCd +  "&typeCd=" + typeCd;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd +  "&typeCd=" + typeCd;
 
 	});
 
@@ -140,7 +143,7 @@
 			return false;
 		}
 		page = totalPage;
-		location.href ="/com/news?page="+ page + "&menuCd="+menuCd +  "&typeCd=" + typeCd;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd +  "&typeCd=" + typeCd;
 	});
 
 	$('.paging a.prev').click(function(){
@@ -148,7 +151,7 @@
 		if(page < 0){
 			page =1;
 		}
-		location.href ="/com/news?page="+ page + "&menuCd="+menuCd + "&typeCd=" + typeCd;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd + "&typeCd=" + typeCd;
 	});
 
 	$('.paging a.next').click(function(){
@@ -163,7 +166,23 @@
 
 		// var text = Number(this.text);
 		// page = Number(text) -1;
-		location.href ="/com/news?page="+ page + "&menuCd="+menuCd + "&typeCd=" + typeCd;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd + "&typeCd=" + typeCd;
 	});
+
+	function download(url){
+
+		//$('iframe').attr("src", url);
+		document.getElementById("fileDown").src = url;
+
+
+//document.getElementById('fileDown').location.reload();
+
+		/*console.log(url);
+
+		$.fileDownload(url, {
+			preparingMessageHtml: "We are preparing your report, please wait...",
+			failMessageHtml: "There was a problem generating your report, please try again."
+		});*/
+	}
 
 </script>

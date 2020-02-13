@@ -29,7 +29,7 @@
 		<!-- content -->
 		<div id="content">
 			<div class="content_wrap">
-				${data.content}
+				<c:out value="${data.content}" escapeXml="false"/>
 				<!-- //컨텐츠 영역 -->
 			</div>
 		</div>
