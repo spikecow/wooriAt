@@ -44,8 +44,8 @@ public class MainController {
 	public ModelAndView main(@RequestParam Map<String, Object> params,Device device) {
 		ModelAndView modelAndView = new ModelAndView();
 
-		Pageable pageable = PageRequest.of(1, 3, new Sort(Sort.Direction.DESC, "bunDate"));
-		Pageable pageable2 = PageRequest.of(1, 7, new Sort(Sort.Direction.DESC, "regDate").and(new Sort(Sort.Direction.DESC, "sellId")) );
+		Pageable pageable = PageRequest.of(0, 3, new Sort(Sort.Direction.DESC, "bunDate"));
+		Pageable pageable2 = PageRequest.of(0, 7, new Sort(Sort.Direction.DESC, "regDate").and(new Sort(Sort.Direction.DESC, "sellId")) );
 
 		Page<KoaSale> saleList = saleService.getList(params, pageable); //분양
 		Page<ShotSell> shotSellList = shortSellService.getList(params, pageable2); //공매물
