@@ -1,10 +1,11 @@
 package com.wooriat.officialweb.service;
 
 import com.wooriat.officialweb.domain.TbPopup;
+import com.wooriat.officialweb.dto.PopupDto;
 
 import java.util.List;
 
 public interface PopupService {
 
-    List<TbPopup> getList();
+    public List<PopupDto> getList();
 }

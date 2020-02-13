@@ -4,6 +4,7 @@ import com.wooriat.officialweb.domain.KoaSale;
 import com.wooriat.officialweb.domain.ShotSell;
 import com.wooriat.officialweb.domain.TbNotice;
 import com.wooriat.officialweb.service.NoticeService;
+import com.wooriat.officialweb.service.PopupService;
 import com.wooriat.officialweb.service.SaleService;
 import com.wooriat.officialweb.service.ShortSellService;
 import lombok.RequiredArgsConstructor;
@@ -44,6 +45,8 @@ public class MainController {
 
 	private final NoticeService noticeService;
 
+	private final PopupService popupService;
+
 	@GetMapping("/")
 	public ModelAndView main(@RequestParam Map<String, Object> params,Device device) {
 		ModelAndView modelAndView = new ModelAndView();
@@ -60,6 +63,7 @@ public class MainController {
 		modelAndView.addObject("saleList", saleList);
 		modelAndView.addObject("shotSellList", shotSellList);
 		modelAndView.addObject("noticeList", noticeList);
+		modelAndView.addObject("popupList", popupService.getList());
 
 		modelAndView.setViewName("kr/main/main");
 
