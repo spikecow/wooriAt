@@ -102,7 +102,7 @@
 
 	var page = "${page}";
 
-	var searchWord  = "${searchWord}"
+	var searchWord  = encodeURI("${searchWord}");
 	var totalPage = Number('${totalPage}');
 	var menuCd = "${menuCd}";
 
