@@ -53,7 +53,7 @@
 				<!-- //sorting -->
 				<!-- 검색 -->
 				<div class="board_search">
-					<input type="text" class="input" title="검색어 입력" placeholder=""><button type="button" class="btn_search" name="btnViewDetail"><span class="blind">검색</span></button>
+					<input type="text" class="input" title="검색어 입력" id="searchWord" placeholder=""><button type="button" class="btn_search" name="btnViewDetail"><span class="blind">검색</span></button>
 				</div>
 				<!-- //검색 -->
 				<!-- 목록 -->
@@ -153,7 +153,11 @@
 	});
 
 	$('button[name=btnViewDetail]').on('click', function () {
-		location.href = "/company/news?menuCd=" + menuCd + "searchWord="+ $('#searchWord').val();
+		if($('#searchWord').val() == ""){
+			alert("검색어를 입력하시기 바랍니다.");
+			return;
+		}
+		location.href = "/company/news?menuCd=" + menuCd + "&searchWord="+ $('#searchWord').val();
 	});
 
 

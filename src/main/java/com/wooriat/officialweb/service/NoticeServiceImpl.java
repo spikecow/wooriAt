@@ -35,9 +35,11 @@ public class NoticeServiceImpl implements NoticeService{
             noticeList = noticeRepository.findByMenuCdAndTypeCd(mc, tp,  pageable);
         }
         else if(!tp.equals("") && !sw.equals("")) {
+            sw = "%"+sw+"%";
             noticeList = noticeRepository.findByMenuCdAndTypeCdAndTitleLikeOrContentLike(mc, tp, sw, sw, pageable);
         }
         else if(tp.equals("") && !sw.equals("")) {
+            sw = "%"+sw+"%";
             noticeList = noticeRepository.findByMenuCdAndTitleLikeOrContentLike(mc, sw, sw, pageable);
         }
         else{

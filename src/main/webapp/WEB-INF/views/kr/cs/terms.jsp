@@ -48,25 +48,25 @@
 			<div class="terms__link">
 				<ul>
 					<li>
-						<a href="guid_01.pdf" target="_blank">분양형토지신탁 계약서</a>
+						<a href="#">분양형토지신탁 계약서</a>
 					</li>
 					<li>
-						<a href="guid_02.pdf" target="_blank">분양관리신탁 계약서</a>
+						<a href="#">분양관리신탁 계약서</a>
 					</li>
 					<li>
-						<a href="guid_03.pdf" target="_blank">관리형토지신탁 계약서</a>
+						<a href="#">관리형토지신탁 계약서</a>
 					</li>
 					<li>
-						<a href="guid_04.pdf" target="_blank">(갑종)관리신탁 계약서</a>
+						<a href="#">(갑종)관리신탁 계약서</a>
 					</li>
 					<li>
-						<a href="guid_05.pdf" target="_blank">(을종)관리신탁 계약서</a>
+						<a href="#">(을종)관리신탁 계약서</a>
 					</li>
 					<li>
-						<a href="guid_06.pdf" target="_blank">처분신탁 계약서</a>
+						<a href="#">처분신탁 계약서</a>
 					</li>
 					<li>
-						<a href="guid_07.pdf" target="_blank">담보신탁 계약서</a>
+						<a href="#">담보신탁 계약서</a>
 					</li>
 				</ul>
 			</div>

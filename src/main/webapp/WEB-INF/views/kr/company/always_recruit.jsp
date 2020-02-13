@@ -48,7 +48,7 @@
 
       <map name="image-map">
         <area alt="입사지원양식 다운로드" href="/download/wooriat_application_form.hwp" coords="1121,209,927,166" shape="rect">
-        <area alt="recruit@kukjetrust.com" href="mailto:recruit@kukjetrust.com" coords="275,261,113,231" shape="rect">
+        <area alt="recruit@wooriat.com" href="mailto:recruit@wooriat.com" coords="275,261,113,231" shape="rect">
       </map>
 
       <!-- //컨텐츠 영역 -->

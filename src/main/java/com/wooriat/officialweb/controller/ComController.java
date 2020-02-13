@@ -72,11 +72,11 @@ public class ComController {
         }
         else if(StringUtils.equalsIgnoreCase(menuCd, "P")){
             modelAndView.setViewName("kr/company/photonews");
-            pageable = PageRequest.of(currentPage, 10, new Sort(Sort.Direction.DESC, "regDate"));
+            pageable = PageRequest.of(currentPage, 9, new Sort(Sort.Direction.DESC, "regDate"));
         }
         else if(StringUtils.equalsIgnoreCase(menuCd, "S")){
             modelAndView.setViewName("kr/company/csr");
-            pageable = PageRequest.of(currentPage, 10, new Sort(Sort.Direction.DESC, "regDate"));
+            pageable = PageRequest.of(currentPage, 9, new Sort(Sort.Direction.DESC, "regDate"));
         }
 
         Page<TbNotice> noticeList = noticeService.getList(params, pageable);
@@ -112,6 +112,8 @@ public class ComController {
 
         if(StringUtils.equalsIgnoreCase(menuCd, "C")) {
             modelAndView.setViewName("kr/company/news_view");
+            model.addAttribute("prevDetail", noticeService.prevDetail(tbNotice.get()));
+            model.addAttribute("nextDetail", noticeService.nextDetail(tbNotice.get()));
         }
         else if(StringUtils.equalsIgnoreCase(menuCd, "M")){
             modelAndView.setViewName("kr/company/management");
