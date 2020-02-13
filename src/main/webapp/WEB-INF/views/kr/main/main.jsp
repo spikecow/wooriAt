@@ -30,23 +30,23 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="main-slide__title">
+                                <p>INVESTOR RELATIONS</p>
                                 <strong>
-                                    새로운 출발!<br />
-                                    부동산금융의 리더 우리자산신탁2
+                                    우리금융그룹과의 시너지로<br />
+                                    종합부동산 금융을 선도하는 우리자산신탁
                                 </strong>
-                                <p>항상 당사를 믿고 소중한 자산을 위탁해주신 모든 고객님께 진심으로 감사드립니다.</p>
+
                             </div>
-                            <img src="/images/main/main_slide01.jpg" alt="">
+                            <img src="/images/main/main_slide02.jpg" alt="">
                         </div>
                         <div class="swiper-slide">
                             <div class="main-slide__title">
                                 <strong>
-                                    새로운 출발!<br />
-                                    부동산금융의 리더 우리자산신탁3
+                                    고객신뢰 든든한 파트너<br />
+                                    1등 종합부동산금융사
                                 </strong>
-                                <p>항상 당사를 믿고 소중한 자산을 위탁해주신 모든 고객님께 진심으로 감사드립니다.</p>
                             </div>
-                            <img src="/images/main/main_slide01.jpg" alt="">
+                            <img src="/images/main/main_slide03.jpg" alt="">
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
