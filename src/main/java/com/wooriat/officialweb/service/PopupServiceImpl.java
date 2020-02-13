@@ -1,6 +1,5 @@
 package com.wooriat.officialweb.service;
 
-import com.wooriat.officialweb.domain.TbPopup;
 import com.wooriat.officialweb.dto.PopupDto;
 import com.wooriat.officialweb.repository.PopupRepository;
 import lombok.RequiredArgsConstructor;
@@ -9,7 +8,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j

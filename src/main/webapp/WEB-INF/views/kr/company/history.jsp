@@ -251,4 +251,9 @@
   </div>
   <!-- //content -->
 </div>
+<script>
+  $(function () {
+    $(".history-tab").tabs();
+  });
+</script>
 </html>

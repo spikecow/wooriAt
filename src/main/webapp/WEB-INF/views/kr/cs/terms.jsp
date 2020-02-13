@@ -22,10 +22,10 @@
 			<div class="dep2">
 				<a href="#none">약관공시</a>
 				<ul class="dep_list">
-					<li><a href="#none">약관공시</a></li>
-					<li><a href="#none">고객문의</a></li>
-					<li><a href="#none">신탁 FAQ</a></li>
-					<li><a href="#none">개인정보처리방침</a></li>
+					<li><a href="/cs/terms">약관공시</a></li>
+					<li><a href="/cs/customer">고객문의</a></li>
+					<li><a href="/cs/faq">신탁 FAQ</a></li>
+					<li><a href="/cs/privacy#tabs-2">개인정보처리방침</a></li>
 				</ul>
 			</div>
 		</div>
