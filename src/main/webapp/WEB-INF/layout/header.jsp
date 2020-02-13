@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <header id="header">
-<h1 class="logo"><a href="#none"><span class="blind">우리자산신탁</span></a></h1>
+<h1 class="logo"><a href="/"><span class="blind">우리자산신탁</span></a></h1>
 <div class="gnb_nav">
 	<ul class="dep1">
 		<li>
