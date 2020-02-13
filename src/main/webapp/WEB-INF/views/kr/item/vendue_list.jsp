@@ -122,7 +122,7 @@
 
 		$("#searchWord").keydown(function(key) {
 			if (key.keyCode == 13) {
-				location.href = "/item/vendue/list?searchWord="+ $('#searchWord').val();
+				location.href = encodeURI("/item/vendue/list?searchWord="+ $('#searchWord').val());
 			}
 		});
 	});
@@ -138,12 +138,12 @@
 	$('.paging span.num a').click(function(){
 		var text = Number(this.text);
 		page = Number(text);
-		location.href ="/item/vendue/list?page="+ page + "&sortStatus="+sortStatus +  "&searchWord="+ searchWord ;
+		location.href = encodeURI("/item/vendue/list?page="+ page + "&sortStatus="+sortStatus +  "&searchWord="+ searchWord) ;
 	});
 
 	$('.paging a.first').click(function(){
 		page = 1;
-		location.href ="/item/vendue/list?page="+ page + "&sortStatus="+sortStatus +  "&searchWord="+ searchWord ;
+		location.href = encodeURI("/item/vendue/list?page="+ page + "&sortStatus="+sortStatus +  "&searchWord="+ searchWord) ;
 
 	});
 
@@ -153,7 +153,7 @@
 			return false;
 		}
 		page = totalPage;
-		location.href ="/item/vendue/list?page="+ page + "&sortStatus="+sortStatus +  "&searchWord="+ searchWord ;
+		location.href = encodeURI("/item/vendue/list?page="+ page + "&sortStatus="+sortStatus +  "&searchWord="+ searchWord) ;
 	});
 
 	$('.paging a.prev').click(function(){
@@ -161,7 +161,7 @@
 		if(page < 0){
 			page =1;
 		}
-		location.href ="/item/vendue/list?page="+ page + "&sortStatus="+sortStatus + "&searchWord="+ searchWord ;
+		location.href = encodeURI("/item/vendue/list?page="+ page + "&sortStatus="+sortStatus + "&searchWord="+ searchWord) ;
 	});
 
 	$('.paging a.next').click(function(){
@@ -176,11 +176,11 @@
 
 		// var text = Number(this.text);
 		// page = Number(text) -1;
-		location.href ="/item/vendue/list?page="+ page + "&sortStatus="+sortStatus + "&searchWord="+ searchWord ;
+		location.href = encodeURI("/item/vendue/list?page="+ page + "&sortStatus="+sortStatus + "&searchWord="+ searchWord) ;
 	});
 
 	$('button[name=btnViewDetail]').on('click', function () {
-		location.href = "/item/vendue/list?searchWord="+ $('#searchWord').val();
+		location.href = encodeURI("/item/vendue/list?searchWord="+ $('#searchWord').val());
 	});
 
 
