@@ -80,7 +80,13 @@
 					<c:forEach items="${list.content}" var="list" varStatus="status">
 					<tr>
 						<td>${(totalCount - status.index) - ( (page - 1)  *  10 ) }</td>
-						<td class="state"><span class="ing">${list.sortStatus}</span></td>
+						<td class="state">
+							<c:choose>
+								<c:when test = "${list.sortStatus eq '낙찰'}"><span class="fin"></c:when>
+								<c:when test = "${list.sortStatus eq '진행'}"><span class="ing"></c:when>
+								<c:otherwise><span></c:otherwise></c:choose>
+								${list.sortStatus}</span>
+						</td>
 						<td class="tit3"><a href="/item/vendue/detail/${list.sellId}">${list.newsTitle}</a></td>
 						<td>
 							<c:if test="${!empty list.insertFile1}">

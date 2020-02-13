@@ -58,8 +58,17 @@
 								<th>진행상태</th>
 
 								<td class="state">
-									<c:if test="${data.sortStatus eq '진행'} "><span class="ing"></c:if>
-
+									<c:choose>
+										<c:when test = "${data.sortStatus eq '낙찰'}">
+											<span class="fin">
+										</c:when>
+										<c:when test = "${data.sortStatus eq '진행'}">
+											<span class="ing">
+										</c:when>
+										<c:otherwise>
+											<span>
+										</c:otherwise>
+									</c:choose>
 										${data.sortStatus}
 									</span>
 								</td>
