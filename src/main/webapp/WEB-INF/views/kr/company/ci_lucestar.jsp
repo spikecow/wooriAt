@@ -33,7 +33,7 @@
       <div class="dep3">
         <ul>
           <li><a href="/company/ci_manual">CI Manual</a></li>
-          <li><a href="/company/ci_lucestar" class="curr">CI 루체스타</a></li>
+          <li><a href="/company/ci_lucestar" class="curr">BI 루체스타</a></li>
         </ul>
       </div>
     </div>

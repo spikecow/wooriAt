@@ -57,6 +57,22 @@
         <div id="tabs-1" class="history-contents">
           <ul>
             <li>
+              <p class="history-contents__title"><span>2020</span></p>
+              <ol>
+                <li><span>02.</span>본사 확장 공사 진행(18층 추가)</li>
+                <li><span>01.</span>이창재, 이창하 공동대표 체제로 전환</li>
+              </ol>
+            </li>
+            <li>
+              <p class="history-contents__title"><span>2019</span></p>
+              <ol>
+                <li><span>12.</span>이창재 대표이사 취임</li>
+                <li><span>12.</span>우리자산신탁으로 상호변경</li>
+                <li><span>07.</span>우리금융그룹 주식매매계약 체결</li>
+                <li><span>01.</span>본사 영업부문 조직개편(5본부 18팀)</li>
+              </ol>
+            </li>
+            <li>
               <p class="history-contents__title"><span>2019</span></p>
               <ol>
                 <li><span>01.</span>본사 영업부문 조직개편(5본부 18팀)</li>

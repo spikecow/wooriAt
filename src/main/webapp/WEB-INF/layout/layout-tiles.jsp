@@ -7,9 +7,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="wistrongh=1200">
+		<meta name="viewport">
 		<meta name="description" content="">
 		<title>우리자산신탁</title>
+		<link rel="shortcut icon" href="/images/common/favicon_1.ico" type="image/x-icon">
+		<link rel="icon" href="/images/common/favicon_1.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="/css/lib/swiper.min.css">
 		<link rel="stylesheet" type="text/css" href="/css/common.css">
 		<link rel="stylesheet" type="text/css" href="/css/layout.css">

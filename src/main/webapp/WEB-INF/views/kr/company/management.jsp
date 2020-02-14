@@ -44,11 +44,11 @@
 				<div class="tab_type1 tab_wrap">
 					<!-- tab menu -->
 					<ul class="tab_menu">
-						<li class="tab_btn"><a href="/com/news?menuCd=M&typeCd=01">수시공시</a></li>
-						<li class="tab_btn"><a href="/com/news?menuCd=M&typeCd=02">영업보고</a></li>
-						<li class="tab_btn"><a href="/com/news?menuCd=M&typeCd=03">영업순자본비율</a></li>
-						<li class="tab_btn"><a href="/com/news?menuCd=M&typeCd=04">감시보고서</a></li>
-						<li class="tab_btn"><a href="/com/news?menuCd=M&typeCd=05">경영공시</a></li>
+						<li class="tab_btn"><a href="/company/news?menuCd=M&typeCd=01">수시공시</a></li>
+						<li class="tab_btn"><a href="/company/news?menuCd=M&typeCd=02">영업보고</a></li>
+						<li class="tab_btn"><a href="/company/news?menuCd=M&typeCd=03">영업순자본비율</a></li>
+						<li class="tab_btn"><a href="/company/news?menuCd=M&typeCd=04">감시보고서</a></li>
+						<li class="tab_btn"><a href="/company/news?menuCd=M&typeCd=05">경영공시</a></li>
 					</ul>
 					<!-- tab menu -->
 					<!-- tab cont -->
@@ -110,7 +110,7 @@
 
 		$("#searchWord").keydown(function(key) {
 			if (key.keyCode == 13) {
-				location.href = "/com/news?searchWord="+ $('#searchWord').val();
+				location.href = "/company/news?searchWord="+ $('#searchWord').val();
 			}
 		});
 	});
@@ -126,12 +126,12 @@
 	$('.paging span.num a').click(function(){
 		var text = Number(this.text);
 		page = Number(text);
-		location.href ="/com/news?page="+ page + "&menuCd="+menuCd +  "&typeCd=" + typeCd;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd +  "&typeCd=" + typeCd;
 	});
 
 	$('.paging a.first').click(function(){
 		page = 1;
-		location.href ="/com/news?page="+ page + "&menuCd="+menuCd +  "&typeCd=" + typeCd;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd +  "&typeCd=" + typeCd;
 
 	});
 
@@ -141,7 +141,7 @@
 			return false;
 		}
 		page = totalPage;
-		location.href ="/com/news?page="+ page + "&menuCd="+menuCd +  "&typeCd=" + typeCd;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd +  "&typeCd=" + typeCd;
 	});
 
 	$('.paging a.prev').click(function(){
@@ -149,7 +149,7 @@
 		if(page < 0){
 			page =1;
 		}
-		location.href ="/com/news?page="+ page + "&menuCd="+menuCd + "&typeCd=" + typeCd;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd + "&typeCd=" + typeCd;
 	});
 
 	$('.paging a.next').click(function(){
@@ -164,7 +164,7 @@
 
 		// var text = Number(this.text);
 		// page = Number(text) -1;
-		location.href ="/com/news?page="+ page + "&menuCd="+menuCd + "&typeCd=" + typeCd;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd + "&typeCd=" + typeCd;
 	});
 
 	function download(url){
