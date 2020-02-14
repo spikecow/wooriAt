@@ -73,12 +73,6 @@
               </ol>
             </li>
             <li>
-              <p class="history-contents__title"><span>2019</span></p>
-              <ol>
-                <li><span>01.</span>본사 영업부문 조직개편(5본부 18팀)</li>
-              </ol>
-            </li>
-            <li>
               <p class="history-contents__title"><span>2018</span></p>
               <ol>
                 <li><span>12.</span>수탁고 23조6천억원</li>
