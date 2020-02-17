@@ -74,19 +74,19 @@
 								<th>첨부파일</th>
 								<td>
 									<c:if test="${!empty data.insertFile1}">
-									<a href="http://images.wooriat.com/ShortSell/${data.insertFile1}" class="down_pdf"><span>${data.insertFile1}</span></a>
+									<a href="http://images.wooriat.com/ShortSell/${data.insertFile1}" class="down_pdf" target="_blank"><span>${data.insertFile1}</span></a>
 									</c:if>
 									<c:if test="${!empty data.insertFile2}">
-										<a href="http://images.wooriat.com/ShortSell/${data.insertFile2}" class="down_pdf"><span>${data.insertFile2}</span></a>
+										<a href="http://images.wooriat.com/ShortSell/${data.insertFile2}" class="down_pdf" target="_blank"><span>${data.insertFile2}</span></a>
 									</c:if>
 									<c:if test="${!empty data.insertFile3}">
-										<a href="http://images.wooriat.com/ShortSell/${data.insertFile3}" class="down_pdf"><span>${data.insertFile3}</span></a>
+										<a href="http://images.wooriat.com/ShortSell/${data.insertFile3}" class="down_pdf" target="_blank"><span>${data.insertFile3}</span></a>
 									</c:if>
 									<c:if test="${!empty data.insertFile4}">
-										<a href="http://images.wooriat.com/ShortSell/${data.insertFile4}" class="down_pdf"><span>${data.insertFile4}</span></a>
+										<a href="http://images.wooriat.com/ShortSell/${data.insertFile4}" class="down_pdf" target="_blank"><span>${data.insertFile4}</span></a>
 									</c:if>
 									<c:if test="${!empty data.insertFile5}">
-										<a href="http://images.wooriat.com/ShortSell/${data.insertFile5}" class="down_pdf"><span>${data.insertFile5}</span></a>
+										<a href="http://images.wooriat.com/ShortSell/${data.insertFile5}" class="down_pdf" target="_blank"><span>${data.insertFile5}</span></a>
 									</c:if>
 								</td>
 							</tr>

@@ -24,7 +24,8 @@ public class TilesConfig {
 	
 	private final String pageTiles = "/WEB-INF/layout/tiles.xml"; // Pc 
 	
-	private final String mobilePageTiles = "/WEB-INF/layout/mobile/mobile-tiles.xml"; // Mobile
+	//private final String mobilePageTiles = "/WEB-INF/layout/mobile/mobile-tiles.xml"; // Mobile
+	private final String mobilePageTiles = "/WEB-INF/layout/tiles.xml"; // Mobile
 	
 	/** ========================================================================================
 	 * @Method Name  : tilesConfigurer
