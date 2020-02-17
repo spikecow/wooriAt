@@ -5,7 +5,16 @@
 
 <!DOCTYPE html>
 <html lang="ko">
+<head>
+	<script type="text/javascript">
 
+		$(document).ready(function(){
+			$(".lnb_area .dep2 a:eq(0)").html("분양물건정보");
+		});
+
+	</script>
+</head>
+<body>
 <!-- container -->
 <div id="container" class="item">
 	<!-- title area -->
@@ -14,21 +23,7 @@
 	</div>
 	<!-- //title area -->
 	<!-- lnb area -->
-	<div class="lnb_area">
-		<div class="lnb_wrap">
-			<div class="loc">
-				<span class="home"><span class="blind">홈</span></span>
-				<span class="dep1">물건정보</span>
-			</div>
-			<div class="dep2">
-				<a href="#none">분양물건정보</a>
-				<ul class="dep_list">
-					<li><a href="/item/sale/list">분양물건정보</a></li>
-					<li><a href="/item/vendue/list">공매물건정보</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
+	<%@ include file="/WEB-INF/layout/itemMenu.jsp"%>
 	<!-- //lnb area -->
 	<!-- content -->
 	<div id="content">
@@ -132,11 +127,36 @@
 	</div>
 	<!-- //content -->
 </div>
-
+</body>
 </html>
 
 
 <script type="text/javascript">
+
+	var page = "${page}";
+
+	var searchWord  = "${searchWord}";
+	var totalPage = Number('${totalPage}');
+	var bizCase = "${bizCase}";
+
+	<c:if test="${bizCase eq 'A'.toString()}"><c:set var="bizCaseNm" value="아파트" /></c:if>
+	<c:if test="${bizCase eq 'F'.toString()}"><c:set var="bizCaseNm" value="아파트형공장" /></c:if>
+	<c:if test="${bizCase eq 'O'.toString()}"><c:set var="bizCaseNm" value="오피스텔" /></c:if>
+	<c:if test="${bizCase eq 'P'.toString()}"><c:set var="bizCaseNm" value="오피스텔/상가" /></c:if>
+	<c:if test="${bizCase eq 'M'.toString()}"><c:set var="bizCaseNm" value="오피스/상가" /></c:if>
+	<c:if test="${bizCase eq 'D'.toString()}"><c:set var="bizCaseNm" value="도시형생활주택" /></c:if>
+	<c:if test="${bizCase eq 'U'.toString()}"><c:set var="bizCaseNm" value="도시형생활주택/오피스텔" /></c:if>
+	<c:if test="${bizCase eq 'J'.toString()}"><c:set var="bizCaseNm" value="주상복합" /></c:if>
+	<c:if test="${bizCase eq 'G'.toString()}"><c:set var="bizCaseNm" value="골프장" /></c:if>
+	<c:if test="${bizCase eq 'S'.toString()}"><c:set var="bizCaseNm" value="상가" /></c:if>
+	<c:if test="${bizCase eq 'T'.toString()}"><c:set var="bizCaseNm" value="타운하우스" /></c:if>
+	<c:if test="${bizCase eq 'R'.toString()}"><c:set var="bizCaseNm" value="리조트" /></c:if>
+	<c:if test="${bizCase eq 'L'.toString()}"><c:set var="bizCaseNm" value="토지" /></c:if>
+	<c:if test="${bizCase eq 'K'.toString()}"><c:set var="bizCaseNm" value="지식산업센터" /></c:if>
+	<c:if test="${bizCase eq 'N'.toString()}"><c:set var="bizCaseNm" value="아파트/오피스텔" /></c:if>
+	<c:if test="${bizCase eq 'Q'.toString()}"><c:set var="bizCaseNm" value="생활숙박시설" /></c:if>
+	<%--<c:if test="${bizCase eq 'S'.toString()}">오피스텔/오피스</c:if>--%>
+	<c:if test="${bizCase eq 'Z'.toString()}"><c:set var="bizCaseNm" value="기타" /></c:if>
 
 	$(document).ready(function() {
 
@@ -145,13 +165,11 @@
 				location.href = encodeURI("/item/sale/list?searchWord="+ $('#searchWord').val());
 			}
 		});
+
+		if(bizCase != ""){
+			$(".board_sorting a:eq(0)").text("${bizCaseNm}");
+		}
 	});
-
-	var page = "${page}";
-
-	var searchWord  = "${searchWord}"
-	var totalPage = Number('${totalPage}');
-	var bizCase = "${bizCase}";
 
 	$('input[name=searchWord]').val(searchWord);
 
@@ -202,6 +220,5 @@
 	$('button[name=btnViewDetail]').on('click', function () {
 		location.href = encodeURI("/item/sale/list?searchWord="+ $('#searchWord').val() );
 	});
-
 
 </script>

@@ -335,7 +335,7 @@
 								</ul>
 							</li>
 						</ul>
-
+       ㅏㅡㅡ
 						<h5 id="p_link11">11.의견수렴 및 불만처리 </h5>
 						<p>우리자산신탁(주)는 개인정보보호와 관련하여 귀하가 의견과 불만을 제기할 수 있는 창구를 개설하고 있습니다. 개인정보와 관련한 불만이 있으신 분은 우리자산신탁(주)의 개인정보 관리책임자에게 의견을 주시면 접수 즉시 조치하여 처리결과를 통보해 드립니다.</p>
 
@@ -353,8 +353,8 @@
 							</li>
 							<li>② 요청 후 「 개인정보(□열람 □정정·삭제 □처리정지 ) 요구서 」 제출 및 보인 확인 철자를 거처 본인의 개인정보 이용 및 제공 현황에 대해 통지해 드립니다.<br><br>
 								<ul>
-									<li>ㆍ <a href="2014_Privercy_Request.pdf"><img src="/images/pdf.gif">요구서(PDF) 다운로드</a></li>
-									<li>ㆍ <a href="2014_Privercy_Request.docx"><img src="/images/doc.gif">요구서(DOC) 다운로드</a></li>
+									<li>ㆍ <a href=“http://images.wooriat.com/Memeber/2014_Privercy_Request.pdf"><img src="/images/common/pdf.gif">요구서(PDF) 다운로드</a></li>
+									<li>ㆍ <a href=“http://images.wooriat.com/Memeber/2014_Privercy_Request.docx"><img src="/images/common/doc.gif">요구서(DOC) 다운로드</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -414,7 +414,7 @@
 									<li>ㆍ 개인정보관리책임자 : 경영지원본부장</li>
 									<li>ㆍ 전화번호 : 02-6202-3000 </li>
 									<li>ㆍ 팩스번호 : 02-6202-3010 </li>
-									<li>ㆍ E-mail : <a href="mailto:webplanner@kukjetrust.com" target="_blank" title="새창 열림">webplanner@kukjetrust.com</a></li>
+									<li>ㆍ E-mail : <a href="mailto:webplanner@wooriat.com" target="_blank" title="새창 열림">webplanner@wooriat.com</a></li>
 								</ul>
 							</li>
 							<li>귀하께서는 회사의 서비스를 이용하시며 발생하는 모든 개인정보보호 관련 민원을 개인정보관리책임자 혹은 담당부서로 신고하실 수 있습니다. 회사는 이용자들의 신고사항에 대해 신속하게 충분한 답변을 드릴 것입니다. 기타 개인정보침해에 대한 신고나 상담이 필요하신 경우에는 아래 기관에 문의하시기 바랍니다.</li>
@@ -572,7 +572,7 @@
 									<li>ㆍ 부서 : 준법감시인 </li>
 									<li>ㆍ 전화번호 : 02-6202-3000 </li>
 									<li>ㆍ 팩스번호 : 02-6202-3010 </li>
-									<li>ㆍ E-mail : <a href="mailto:webplanner@kukjetrust.com" target="_blank" title="새창 열림">webplanner@kukjetrust.com</a></li>
+									<li>ㆍ E-mail : <a href="mailto:webplanner@wooriat.com" target="_blank" title="새창 열림">webplanner@wooriat.com</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -651,9 +651,14 @@
 	<!-- //content -->
 </div>
 
-<script>
+<script type="text/javascript">
+	var ref = "${ref}";
 	$(function () {
 		$(".privacy-tab").tabs();
+
+		if(ref == "ft") {
+			$(".privacy-tab__item:eq(1) a").click();
+		}
 	});
 </script>
 </html>

@@ -35,6 +35,7 @@
 					<a href="#none">연도 전체</a>
 					<ul class="sort_list">
 						<li><a href="#none">연도 전체</a></li>
+						<li><a href="#none">2020</a></li>
 						<li><a href="#none">2019</a></li>
 						<li><a href="#none">2018</a></li>
 						<li><a href="#none">2017</a></li>

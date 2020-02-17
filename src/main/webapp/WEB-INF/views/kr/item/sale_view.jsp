@@ -5,7 +5,16 @@
 
 <!DOCTYPE html>
 <html lang="ko">
+<head>
+	<script type="text/javascript">
 
+		$(document).ready(function(){
+			$(".lnb_area .dep2 a:eq(0)").html("분양물건정보");
+		});
+
+	</script>
+</head>
+<body>
 	<div id="container" class="item"><!-- 각 메뉴명 고유 클래스 삽입 -->
 		<!-- title area -->
 		<div class="title_area">
@@ -13,21 +22,7 @@
 		</div>
 		<!-- //title area -->
 		<!-- lnb area -->
-		<div class="lnb_area">
-			<div class="lnb_wrap">
-				<div class="loc">
-					<span class="home"><span class="blind">홈</span></span>
-					<span class="dep1">물건정보</span>		
-				</div>
-				<div class="dep2">
-					<a href="#none">분양물건정보</a>
-					<ul class="dep_list">
-						<li><a href="/item/sale/list">분양물건정보</a></li>
-						<li><a href="/item/vendue/list">공매물건정보</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+		<%@ include file="/WEB-INF/layout/itemMenu.jsp"%>
 		<!-- //lnb area -->
 		<!-- content -->
 		<div id="content">
@@ -189,5 +184,5 @@
 		<!-- //content -->
 	</div> 
 	<!-- //container -->
-
+</body>
 </html>

@@ -5,6 +5,7 @@ import com.wooriat.officialweb.service.QaService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -57,9 +58,11 @@ public class CsController {
 
     @GetMapping("/privacy")
     @ResponseBody
-    public ModelAndView detailPrivacyController() throws Exception {
+    public ModelAndView detailPrivacyController(@RequestParam Map<String, Object> params, Model model) throws Exception {
 
         ModelAndView modelAndView = new ModelAndView();
+
+        model.addAttribute("ref", (String) params.get("ref") == null  ? "" : (String) params.get("ref"));
         modelAndView.setViewName("kr/cs/privacy");
         return modelAndView;
     }
