@@ -21,6 +21,15 @@
                         <div class="swiper-slide">
                             <div class="main-slide__title">
                                 <strong>
+                                    고객신뢰 든든한 파트너<br />
+                                    1등 종합부동산금융사
+                                </strong>
+                            </div>
+                            <img src="/images/main/main_slide03.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-slide__title">
+                                <strong>
                                     새로운 출발!<br />
                                     종합부동산금융의 리더 우리자산신탁
                                 </strong>
@@ -38,15 +47,6 @@
 
                             </div>
                             <img src="/images/main/main_slide02.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="main-slide__title">
-                                <strong>
-                                    고객신뢰 든든한 파트너<br />
-                                    1등 종합부동산금융사
-                                </strong>
-                            </div>
-                            <img src="/images/main/main_slide03.jpg" alt="">
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>

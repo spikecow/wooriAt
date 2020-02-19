@@ -67,7 +67,7 @@
               <p class="history-contents__title"><span>2019</span></p>
               <ol>
                 <li><span>12.</span>이창재 대표이사 취임</li>
-                <li><span>12.</span>우리자산신탁으로 상호변경</li>
+                <li><span>12.</span>우리금융지주 자회사로 편입</li>
                 <li><span>07.</span>우리금융그룹 주식매매계약 체결</li>
                 <li><span>01.</span>본사 영업부문 조직개편(5본부 18팀)</li>
               </ol>

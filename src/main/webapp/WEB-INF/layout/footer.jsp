@@ -14,6 +14,7 @@
 			<a href="#none">FAMILY SITE</a>
 			<div class="list">
 				<ul>
+					<li><a href="https://www.woorifg.com/kor/main/index.do" target="_blank">우리금융지주</a></li>
 					<li><a href="http://wooribank.com" target="_blank">우리은행</a></li>
 					<li><a href="http://wooricard.com" target="_blank">우리카드</a></li>
 					<li><a href="http://www.wooriib.com" target="_blank">우리종합금융</a></li>
