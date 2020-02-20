@@ -43,6 +43,7 @@ public class ComController {
     String menuCd;
     String typeCd;
     String sw;
+    String year;
 
     @GetMapping("/news")
     public ModelAndView newsInfo(@RequestParam Map<String, Object> params, Model model, Pageable pageable) {
@@ -52,6 +53,7 @@ public class ComController {
         menuCd = (String) params.get("menuCd") == null  ? "C" : (String) params.get("menuCd");
         typeCd = (String)params.get("typeCd") == null ? "" : (String)params.get("typeCd");
         sw = (String)params.get("searchWord") == null ? "" : (String)params.get("searchWord");
+        year = (String)params.get("year") == null ? "" : (String)params.get("year");
 
         int page = (String) params.get("page") == null  ? 1 : Integer.parseInt((String)params.get("page"));
 
@@ -83,6 +85,7 @@ public class ComController {
 
         model.addAttribute("menuCd", menuCd);
         model.addAttribute("typeCd", typeCd);
+        model.addAttribute("year", year);
         model.addAttribute("list", noticeList);
         model.addAttribute("totalPage", noticeList.getTotalPages());
         model.addAttribute("totalCount", noticeList.getTotalElements());

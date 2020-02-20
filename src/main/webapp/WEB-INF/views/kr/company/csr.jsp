@@ -106,18 +106,19 @@
 	var searchWord  = encodeURI("${searchWord}");
 	var totalPage = Number('${totalPage}');
 	var menuCd = "${menuCd}";
+	var year  = "${year}";
 
 	$('input[name=searchWord]').val(searchWord);
 
 	$('.paging span.num a').click(function(){
 		var text = Number(this.text);
 		page = Number(text);
-		location.href ="/company/news?page="+ page + "&menuCd="+menuCd +  "&searchWord="+ searchWord ;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd +  "&searchWord="+ searchWord+  "&year="+ year ;
 	});
 
 	$('.paging a.first').click(function(){
 		page = 1;
-		location.href ="/company/news?page="+ page + "&menuCd="+menuCd +  "&searchWord="+ searchWord ;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd +  "&searchWord="+ searchWord +  "&year="+ year ;
 
 	});
 
@@ -127,7 +128,7 @@
 			return false;
 		}
 		page = totalPage;
-		location.href ="/company/news?page="+ page + "&menuCd="+menuCd +  "&searchWord="+ searchWord ;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd +  "&searchWord="+ searchWord +  "&year="+ year ;
 	});
 
 	$('.paging a.prev').click(function(){
@@ -135,7 +136,7 @@
 		if(page < 0){
 			page =1;
 		}
-		location.href ="/company/news?page="+ page + "&menuCd="+menuCd + "&searchWord="+ searchWord ;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd + "&searchWord="+ searchWord +  "&year="+ year ;
 	});
 
 	$('.paging a.next').click(function(){
@@ -150,7 +151,7 @@
 
 		// var text = Number(this.text);
 		// page = Number(text) -1;
-		location.href ="/company/news?page="+ page + "&menuCd="+menuCd + "&searchWord="+ searchWord ;
+		location.href ="/company/news?page="+ page + "&menuCd="+menuCd + "&searchWord="+ searchWord+  "&year="+ year ;
 	});
 
 	$('button[name=btnViewDetail]').on('click', function () {
