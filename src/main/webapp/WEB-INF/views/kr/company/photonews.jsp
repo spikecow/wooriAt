@@ -33,21 +33,21 @@
 				<div class="board_sorting w150">
 					<a href="#none">연도 전체</a>
 					<ul class="sort_list">
-						<li><a href="#none">연도 전체</a></li>
-						<li><a href="#none">2020</a></li>
-						<li><a href="#none">2019</a></li>
-						<li><a href="#none">2018</a></li>
-						<li><a href="#none">2017</a></li>
-						<li><a href="#none">2016</a></li>
-						<li><a href="#none">2015</a></li>
-						<li><a href="#none">2014</a></li>
-						<li><a href="#none">2013</a></li>
-						<li><a href="#none">2012</a></li>
-						<li><a href="#none">2011</a></li>
-						<li><a href="#none">2010</a></li>
-						<li><a href="#none">2009</a></li>
-						<li><a href="#none">2008</a></li>
-						<li><a href="#none">2007</a></li>
+						<li><a href="/company/news?menuCd=${menuCd}">연도 전체</a></li>
+						<li><a href="/company/news?menuCd=${menuCd}&year=2020">2020</a></li>
+						<li><a href="/company/news?menuCd=${menuCd}&year=2019">2019</a></li>
+						<li><a href="/company/news?menuCd=${menuCd}&year=2018">2018</a></li>
+						<li><a href="/company/news?menuCd=${menuCd}&year=2017">2017</a></li>
+						<li><a href="/company/news?menuCd=${menuCd}&year=2016">2016</a></li>
+						<li><a href="/company/news?menuCd=${menuCd}&year=2015">2015</a></li>
+						<li><a href="/company/news?menuCd=${menuCd}&year=2014">2014</a></li>
+						<li><a href="/company/news?menuCd=${menuCd}&year=2013">2013</a></li>
+						<li><a href="/company/news?menuCd=${menuCd}&year=2012">2012</a></li>
+						<li><a href="/company/news?menuCd=${menuCd}&year=2011">2011</a></li>
+						<li><a href="/company/news?menuCd=${menuCd}&year=2010">2010</a></li>
+						<li><a href="/company/news?menuCd=${menuCd}&year=2009">2009</a></li>
+						<li><a href="/company/news?menuCd=${menuCd}&year=2008">2008</a></li>
+						<li><a href="/company/news?menuCd=${menuCd}&year=2007">2007</a></li>
 					</ul>
 				</div>
 				<!-- //sorting -->
@@ -95,7 +95,7 @@
 
 		$("#searchWord").keydown(function(key) {
 			if (key.keyCode == 13) {
-				location.href = "/company/news?searchWord="+ $('#searchWord').val();
+				location.href = "/company/news?menuCd="+menuCd+"&searchWord="+ $('#searchWord').val();
 			}
 		});
 	});

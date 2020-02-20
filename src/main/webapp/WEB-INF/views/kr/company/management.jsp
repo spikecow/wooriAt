@@ -110,7 +110,7 @@
 
 		$("#searchWord").keydown(function(key) {
 			if (key.keyCode == 13) {
-				location.href = "/company/news?searchWord="+ $('#searchWord').val();
+				location.href = "/company/news?menuCd="+menuCd+"&searchWord="+ $('#searchWord').val();
 			}
 		});
 	});

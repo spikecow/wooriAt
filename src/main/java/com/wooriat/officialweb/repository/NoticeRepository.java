@@ -14,6 +14,7 @@ public interface NoticeRepository extends JpaRepository<TbNotice,Long>  {
 
     public Page<TbNotice> findByMenuCdAndTypeCd(String mc, String tp, Pageable page);
     public Page<TbNotice> findByMenuCd(String mc, Pageable page);
+    public Page<TbNotice> findByMenuCdAndRegDateBetween(String mc, LocalDateTime startDate, LocalDateTime endDate, Pageable page);
 
     public TbNotice findTopByMenuCdAndRegDateLessThanEqualAndSeqNoLessThanOrderByRegDateDescSeqNoDesc(String mc, LocalDateTime regDate, Long id); // 이전글
     public TbNotice findTopByMenuCdAndRegDateGreaterThanEqualAndSeqNoGreaterThanOrderByRegDateAscSeqNoAsc(String mc, LocalDateTime regDate , Long id); // 다음글
