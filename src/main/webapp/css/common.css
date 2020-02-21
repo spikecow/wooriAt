@@ -160,6 +160,7 @@ textarea:focus, button:focus, select:focus, input:focus {outline:none;}
 .board_list_type4 tbody td.tit a {width:850px;}/*회사소개*/
 .board_list_type4 tbody td.tit2 a {width:580px;}/*경영현황*/
 .board_list_type4 tbody td.tit3 a {width:670px;}/*공매물건정보*/
+.board_list_type4 tbody td.tl {padding:10px 10px 10px 30px;text-align: left;}
 .board_list_type4 .keyword {color:#0068b8;font-weight:bold;}
 .board_list_type4 .state {color:#666;font-weight:bold;}
 .board_list_type4 .state .ing {color:#0068b8;}
@@ -187,8 +188,8 @@ textarea:focus, button:focus, select:focus, input:focus {outline:none;}
 .board_view_pg li.prev strong {background-image:url(/images/common/ico_view_pg_prev.png);}
 .board_view_pg li.next strong {background-image:url(/images/common/ico_view_pg_next.png);}
 .board_view_pg li span {display:inline-block;width:1000px;padding:0 25px;box-sizing:border-box;font-size:16px;line-height:60px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;vertical-align:middle;}
-.board_view_img {padding-bottom:40px;}
-.board_view_img img{max-width:100%;}
+.board_view_img {padding-bottom:40px;text-align: center;}
+.board_view_img img {max-width:100%;}
 
 /* write */
 .board_write_table {clear:both;border-top:#0068b8 3px solid;}

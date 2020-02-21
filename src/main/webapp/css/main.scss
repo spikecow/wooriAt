@@ -46,6 +46,7 @@ html {
       opacity: 0;
       transform: translateY(10px);
       transition: opacity 3s ease, transform 1s ease;
+      font-family: "Noto Sans";
       strong {
         display: block;
         margin-bottom: 15px;
@@ -179,6 +180,7 @@ html {
         }
         &-text {
           padding: 45px 0 0 0;
+          min-height: 104px;
           margin-bottom: 40px;
           text-align: center;
           font-size: 18px;
@@ -644,15 +646,6 @@ html {
           height: 8px;
           background: url(/images/main/arrow.png) no-repeat 0 100%;
         }
-      }
-    }
-  }
-}
-
-.faq {
-  &-tab {
-    &__item {
-      &--active {
       }
     }
   }

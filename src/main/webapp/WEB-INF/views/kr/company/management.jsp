@@ -48,7 +48,7 @@
 						<li class="tab_btn"><a href="/company/news?menuCd=M&typeCd=02">영업보고</a></li>
 						<li class="tab_btn"><a href="/company/news?menuCd=M&typeCd=03">영업순자본비율</a></li>
 						<li class="tab_btn"><a href="/company/news?menuCd=M&typeCd=04">감시보고서</a></li>
-						<li class="tab_btn"><a href="/company/news?menuCd=M&typeCd=05">경영공시</a></li>
+						<!--li class="tab_btn"><a href="/company/news?menuCd=M&typeCd=05">경영공시</a></li-->
 					</ul>
 					<!-- tab menu -->
 					<!-- tab cont -->
