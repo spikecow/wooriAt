@@ -59,13 +59,13 @@
         <h5>CI <span>규정</span></h5>
         CI 조합은 심볼마크와 로고타입을 일정한 기준에 따라 조합한 것을 말하며 이 같은 경우 기본적인 표식은 심볼마크이고 로고타입은 회사명을 명확하게 해주는<br />
         요소입니다.
-        <p class="ci-manual__subtxt">※ 우리금융그룹 CI의 불법적인 도용 및 사용을 금지하며 불법사용시 관련 법에 의해 처벌을 받을 수 있습니다.</p>
+        <p class="ci-manual__subtxt">※ 우리자산신탁 CI의 불법적인 도용 및 사용을 금지하며 불법사용시 관련 법에 의해 처벌을 받을 수 있습니다.</p>
         <br />
         <h5>우리자산신탁</h5>
         <div class="ci-manual__img02">
           <img src="/images/content/ci-manual02.jpg" alt="">
         </div>
-        <a href="/download/우리자산신탁_CI.zip" class="ci-manual__btn">CI 다운받기</a>
+        <!--a href="/download/우리자산신탁_CI.zip" class="ci-manual__btn">CI 다운받기</a-->
       </div>
       <!-- //컨텐츠 영역 -->
     </div>

@@ -114,7 +114,7 @@
             <tr>
               <th scope="col">구분</th>
               <th scope="col">담보신탁</th>
-              <th scope="col">제당제도</th>
+              <th scope="col">저당제도</th>
             </tr>
             </thead>
             <tbody>
@@ -174,7 +174,7 @@
               <td>대상</td>
             </tr>
             <tr>
-              <td>채무자의 소용비용</td>
+              <td>채무자의 소요비용</td>
               <td>적음</td>
               <td>많음</td>
             </tr>
