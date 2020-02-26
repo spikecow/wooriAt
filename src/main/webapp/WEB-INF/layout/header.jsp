@@ -8,6 +8,7 @@
 			<a href="#none">회사소개</a>
 			<ul class="dep2">
 				<li><a href="/company/overview">회사개요</a></li>
+				<li><a href="/company/directors">이사회</a></li>
 				<li><a href="/company/ci_manual">CI소개</a></li>
 				<li><a href="/company/news?menuCd=M&typeCd=01">경영현황</a></li>
 				<li><a href="/company/news?menuCd=C">회사소식</a></li>

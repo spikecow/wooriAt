@@ -23,6 +23,7 @@
                 <a href="#none">채용정보</a>
                 <ul class="dep_list">
                     <li><a href="/company/overview">회사개요</a></li>
+                    <li><a href="/company/directors">이사회</a></li>
                     <li><a href="/company/ci_manual">CI소개</a></li>
                     <li><a href="/company/news?menuCd=M&typeCd=01">경영현황</a></li>
                     <li><a href="/company/news?menuCd=C">회사소식</a></li>
@@ -88,7 +89,7 @@
                         <li>직무 관련 교육비 지원, 사내도서관운영, 외부강사초청교육</li>
                     </ul>
                 </div>
-                <a href="" class="recruit__btn">우리자산신탁 인재채용 페이지 바로가기</a>
+                <a href="javascript:alert('지금은 채용기간이 아닙니다.');void(0);" class="recruit__btn">우리자산신탁 인재채용 페이지 바로가기</a>
             </div>
             <!-- //컨텐츠 영역 -->
         </div>

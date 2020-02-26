@@ -58,14 +58,16 @@
               되겠습니다.
             </p>
           </div>
-          <div class="ceo__name01">
-            이창재<br />
-            대표이사
-          </div>
-          <div class="ceo__name02">
-            이창하<br />
-            대표이사
-          </div>
+          <!--
+                        <div class="ceo__name01">
+                          이창재<br />
+                          대표이사
+                        </div>
+                        <div class="ceo__name02">
+                          이창하<br />
+                          대표이사
+                        </div>
+          -->
         </div>
         <div class="ceo__text">
           고객님 반갑습니다.<br />

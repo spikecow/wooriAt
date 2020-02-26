@@ -212,5 +212,12 @@ public class ComController {
 
     }
 
+    @GetMapping("/directors")
+    public ModelAndView directorsInfo() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("kr/company/directors");
+        return modelAndView;
+    }
+
 
 }
