@@ -57,8 +57,8 @@
 							<tr>
 								<td>${(totalCount - status.index) - ( (page - 1)  *  10 ) }</td>
 								<td class="tit"><a href="/company/news/${ list.seqNo }/${list.menuCd}">${list.title}</a></td>
-								<td><fmt:parseDate value="${ list.regDate }" pattern="yyyy-MM-dd'T'HH:mm" var="cretDtm" type="both" />
-									<fmt:formatDate pattern="yyyy.MM.dd" value="${ cretDtm }" />
+								<td><fmt:parseDate value="${ list.regDate }" pattern="yyyy-MM-dd'T'HH:mm" var="regDate" type="both" />
+									<fmt:formatDate pattern="yyyy.MM.dd" value="${ regDate }" />
 								</td>
 							</tr>
 							</c:forEach>
@@ -123,7 +123,7 @@
 	});
 
 	$('.paging a.prev').click(function(){
-		page = Number(page-1);
+		page = Number(page)-5;
 		if(page < 0){
 			page =1;
 		}
@@ -135,7 +135,7 @@
 			alert("마지막페이지 입니다.");
 			return false;
 		}
-		page = Number(page+1);
+		page = Number(page)+5;
 		if(page > totalPage){
 			page = totalPage;
 		}

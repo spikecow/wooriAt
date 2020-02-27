@@ -69,11 +69,11 @@ public class NoticeServiceImpl implements NoticeService{
 
     @Override
     public TbNotice prevDetail(TbNotice tbNotice) {
-        return noticeRepository.findTopByMenuCdAndRegDateLessThanEqualAndSeqNoLessThanOrderByRegDateDescSeqNoDesc(tbNotice.getMenuCd(), tbNotice.getRegDate(), tbNotice.getSeqNo());
+        return noticeRepository.findTopByMenuCdAndRegDateLessThanEqualAndSeqNoNotOrderByRegDateDescSeqNoDesc(tbNotice.getMenuCd(), tbNotice.getRegDate(), tbNotice.getSeqNo());
     }
 
     @Override
     public TbNotice nextDetail(TbNotice tbNotice) {
-        return noticeRepository.findTopByMenuCdAndRegDateGreaterThanEqualAndSeqNoGreaterThanOrderByRegDateAscSeqNoAsc(tbNotice.getMenuCd(),tbNotice.getRegDate(), tbNotice.getSeqNo());
+        return noticeRepository.findTopByMenuCdAndRegDateGreaterThanEqualAndSeqNoNotOrderByRegDateAscSeqNoAsc(tbNotice.getMenuCd(),tbNotice.getRegDate(), tbNotice.getSeqNo());
     }
 }

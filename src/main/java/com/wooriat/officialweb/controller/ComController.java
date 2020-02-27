@@ -64,7 +64,8 @@ public class ComController {
             currentPage = currentPage -1;
         }
 
-        pageable = PageRequest.of(currentPage, 10, new Sort(Sort.Direction.DESC, "regDate"));
+
+        pageable = PageRequest.of(currentPage, 10, new Sort(Sort.Direction.DESC, "regDate").and(new Sort(Sort.Direction.DESC, "seqNo")) );
 
         if(StringUtils.equalsIgnoreCase(menuCd, "C")) {
             modelAndView.setViewName("kr/company/news");

@@ -65,8 +65,13 @@
 							<span class="cont">
 								<a href="/company/news/${list.seqNo}/${menuCd}" class="tit">${list.title}</a>
 								<span class="date">
-									<fmt:parseDate value="${ list.regDate }" pattern="yyyy-MM-dd'T'HH:mm" var="cretDtm" type="both" />
-									<fmt:formatDate pattern="yyyy.MM.dd" value="${ cretDtm }" />
+									<fmt:parseDate value="${ list.strtDt }" pattern="yyyy-MM-dd'T'HH:mm" var="strtDt" type="both" />
+									<fmt:formatDate pattern="yyyy.MM.dd" value="${ strtDt }" />
+									 <c:if test="${not empty list.endDt}">
+										 &nbsp;~&nbsp;
+										 <fmt:parseDate value="${ list.endDt }" pattern="yyyy-MM-dd'T'HH:mm" var="endDt" type="both" />
+										 <fmt:formatDate pattern="yyyy.MM.dd" value="${ endDt }" />
+									 </c:if>
 								</span>
 							</span>
 						</li>
@@ -131,7 +136,7 @@
 	});
 
 	$('.paging a.prev').click(function(){
-		page = Number(page-1);
+		page = Number(page)-5;
 		if(page < 0){
 			page =1;
 		}
@@ -143,7 +148,7 @@
 			alert("마지막페이지 입니다.");
 			return false;
 		}
-		page = Number(page+1);
+		page = Number(page)+5;
 		if(page > totalPage){
 			page = totalPage;
 		}

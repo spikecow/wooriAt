@@ -155,7 +155,7 @@
 	});
 
 	$('.paging a.prev').click(function(){
-		page = Number(page-1);
+		page = Number(page)-5;
 		if(page < 0){
 			page =1;
 		}
@@ -167,7 +167,7 @@
 			alert("마지막페이지 입니다.");
 			return false;
 		}
-		page = Number(page+1);
+		page = Number(page)+5;
 		if(page > totalPage){
 			page = totalPage;
 		}
