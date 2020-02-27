@@ -22,7 +22,7 @@
 					<li><a href="http://www.wfri.re.kr" target="_blank">우리금융경영연구소</a></li>
 					<li><a href="http://www.wooricredit.com" target="_blank">우리신용정보</a></li>
 					<li><a href="http://www.woorifs.co.kr" target="_blank">우리펀드서비스</a></li>
-					<li><a href="http://www.kukjetrust.com" target="_blank">우리자산신탁</a></li>
+					<li><a href="http://www.wooriat.com" target="_blank">우리자산신탁</a></li>
 					<li><a href="https://www.wooriam.kr" target="_blank">우리자산운용</a></li>
 					<li><a href="http://www.wooriglobalam.com" target="_blank">우리글로벌자산운용</a></li>
 				</ul>
@@ -35,7 +35,7 @@
 			</ul>
 		</div>
 		<div class="foot_con">
-			<p class="addr">(06160) 서울특별시 강남구 테헤란로 419. 강남파이낸스빌딩 20층<em>전화. 02-6202-3000</em><em>팩스. 02-6202-3010</em></p>
+			<p class="addr">(06160) 서울특별시 강남구 테헤란로 419. 강남파이낸스플라자 20층<em>전화. 02-6202-3000</em><em>팩스. 02-6202-3010</em></p>
 			<p class="copy">COPYRIGHT © WOORI ASSET TRUST. LTD. ALL RIGHTS RESERVED</p>
 		</div>
 	</div>
