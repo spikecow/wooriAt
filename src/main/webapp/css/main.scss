@@ -32,6 +32,9 @@ html {
   overflow-x: hidden;
 }
 .main {
+  .content_wrap {
+    padding-bottom: 0 !important;
+  }
   &-slide {
     width: 1920px;
     height: 735px;
@@ -40,7 +43,7 @@ html {
     &__title {
       position: absolute;
       right: 0;
-      bottom: 330px;
+      bottom: 355px;
       left: 0;
       text-align: center;
       opacity: 0;
@@ -49,19 +52,19 @@ html {
       font-family: "Noto Sans";
       strong {
         display: block;
+        margin-top: 14px;
         margin-bottom: 15px;
-        font-size: 64px;
+        font-size: 60px;
         line-height: 72px;
         font-weight: 700;
         color: #fff;
-        @include letter-spacing(-50, 64);
+        @include letter-spacing(-50, 60);
       }
       p {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 26px;
         font-weight: 300;
         color: #fff;
-        @include letter-spacing(-30, 18);
       }
     }
     .swiper {
@@ -134,12 +137,13 @@ html {
   &-auction {
     position: relative;
     width: 1920px;
+    height: 806px;
     margin-left: -396px;
-    padding-bottom: 94px;
     background: #f4f4f4 url(/images/main/main_auction_bg.jpg) repeat-x 50% 100%;
+    box-sizing: border-box;
     &__title {
       position: absolute;
-      top: 102px;
+      top: 42px;
       left: 50%;
       margin-left: -543px;
       font-size: 16px;
@@ -162,7 +166,7 @@ html {
       position: relative;
       width: 1200px;
       margin: 0 auto;
-      margin-top: -60px;
+      top: -60px;
       z-index: 20;
       @include clearfix();
       &-item {
@@ -175,6 +179,7 @@ html {
         background-color: #fff;
         box-shadow: 0px 6px 12.74px 0.26px rgba(0, 0, 0, 0.2);
         box-sizing: border-box;
+        border-radius: 1px;
         &:first-child {
           margin-left: 327px;
         }
@@ -230,10 +235,10 @@ html {
     position: relative;
     width: 1920px;
     margin-left: -396px;
-    height: 700px;
+    height: 703px;
     background: url(/images/main/main_trust_bg.jpg) no-repeat 50% 50%;
     &__title {
-      padding: 106px 0 56px 0;
+      padding: 86px 0 56px 0;
       font-size: 16px;
       line-height: 24px;
       color: #fff;
@@ -243,7 +248,7 @@ html {
       strong {
         display: block;
         margin-left: -2px;
-        margin-bottom: 15px;
+        margin-bottom: 16px;
         font-size: 42px;
         line-height: 1;
         color: #fff;
@@ -366,18 +371,12 @@ html {
 
   &-parcelout {
     position: relative;
-    padding-bottom: 80px;
+    height: 703px;
     &__title {
-      padding: 106px 0 56px 20px;
-      font-size: 16px;
-      line-height: 24px;
-      color: #999;
-      z-index: 30;
-      @include letter-spacing(-30, 16);
+      padding: 69px 0 42px 0;
+      text-align: center;
       strong {
         display: block;
-        margin-left: -2px;
-        margin-bottom: 15px;
         font-size: 42px;
         line-height: 1;
         color: #242424;
@@ -386,177 +385,124 @@ html {
       }
     }
     &__slide {
-      width: 646px;
-      height: 360px;
-      background-color: #0068b8;
-      overflow: hidden;
-      &-status {
+      text-align: center;
+      width: 5760px;
+      margin-left: -2316px;
+      @include clearfix();
+      &-item {
+        position: relative;
         display: inline-block;
-        height: 26px;
-        padding: 0 12px;
-        border-radius: 13px;
-        background-color: #005393;
-        color: #fff;
-        font-size: 14px;
-        line-height: 24px;
-        @include letter-spacing(-50, 14);
-      }
-      .swiper {
-        &-container {
-          height: 360px;
-          background-color: #0068b8;
-        }
-        &-slide {
-          padding: 30px;
-          background-color: #0068b8;
-          font-family: "Noto Sans";
-          font-size: 26px;
-          line-height: 34px;
-          box-sizing: border-box;
-          @include letter-spacing(-50, 26);
-          a {
-            display: block;
-            margin: 45px 165px 0 9px;
-            color: #fff;
-            @include text-clamp(4, 34);
-          }
-        }
-        &-button-next {
-          bottom: 50px;
-          top: auto;
-          left: auto;
-          right: 201px;
-          width: 28px;
-          height: 28px;
-          margin: 0;
-          border-radius: 2px;
-          border: 1px solid rgba(221, 221, 221, 0.2);
-          transition: border 0.1s ease;
-          box-sizing: border-box;
-          &:hover {
-            border: 1px solid rgba(221, 221, 221, 0.5);
-          }
+        width: 352px;
+        margin: 0 15.5px;
+        &-thumb {
+          position: relative;
           &:after {
             content: "";
             display: block;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 7px;
-            height: 11px;
-            margin-top: -5.5px;
-            margin-left: -3.5px;
-            background: url(/images/main/arrow02.png) no-repeat 100% 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #000;
+            opacity: 0.65;
+            z-index: 50;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
           }
         }
-        &-button-prev {
-          bottom: 50px;
-          top: auto;
-          left: auto;
-          right: 228px;
-          width: 28px;
-          height: 28px;
-          margin: 0;
-          border-radius: 2px;
-          border: 1px solid rgba(221, 221, 221, 0.2);
-          transition: border 0.1s ease;
-          box-sizing: border-box;
-          &:hover {
-            border: 1px solid rgba(221, 221, 221, 0.5);
-          }
-          &:after {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 7px;
-            height: 11px;
-            margin-top: -5.5px;
-            margin-left: -3.5px;
-            background: url(/images/main/arrow02.png) no-repeat 0 0;
-          }
+        &:first-child {
         }
-        &-pagination {
-          bottom: 54px;
-          padding-right: 270px;
-          text-align: right;
-          font-size: 15px;
-          color: #a0b8ca;
-          opacity: 0.8;
-          box-sizing: border-box;
-          &-current {
-            color: #fff;
-          }
+        img {
+          box-shadow: 0px 6px 9.8px 0.2px rgba(0, 0, 0, 0.3);
+        }
+        p {
+          padding: 0 20px;
+          margin-top: 21px;
+          font-size: 18px;
+          color: #242424;
+          line-height: 26px;
+          text-align: center;
+          font-size: 0;
+          @include letter-spacing(-50, 18);
+          @include text-clamp(2, 26);
         }
       }
     }
-    &__img {
-      position: absolute;
-      top: 193px;
-      left: 485px;
-      width: 450px;
-      height: 450px;
-      z-index: 20;
-      &-item {
-        width: 450px;
-        height: 450px;
-        box-shadow: 0px 6px 12.74px 0.26px rgba(0, 0, 0, 0.4);
-        //opacity: .9;
-        //transition: left 0.8s ease-in-out, top 0.8s ease-in-out ,width 0.8s ease-in-out ,height 0.8s ease-in-out,z-index 5s;
-        transition: all 0.6s ease;
-        overflow: hidden;
-        &:after {
-          transition: all 1s ease;
+    .swiper {
+      &-container {
+      }
+      &-slide {
+        position: relative;
+        width: 1920px !important;
+
+        &-prev {
+          left: 622px;
         }
-        img {
-          width: 100%;
+        &-next {
+          left: -622px;
         }
-        &--num01 {
-          position: absolute;
-          top: 0;
+        &-active {
           left: 0;
-          width: 450px;
-          height: 450px;
-          opacity: 1;
-          z-index: 30;
-        }
-        &--num02 {
-          position: absolute;
-          top: -70px;
-          left: 150px;
-          width: 406px;
-          height: 406px;
-          z-index: 20;
-          &:after {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #102535;
-            opacity: 0.9;
+          .main-parcelout__slide-item-thumb {
+            &:after {
+              display: none;
+            }
+          }
+          .main-parcelout__slide-item {
+            p {
+              font-size: 18px;
+            }
           }
         }
-        &--num03 {
-          position: absolute;
-          top: 25px;
-          left: 237px;
-          width: 406px;
-          height: 406px;
-          z-index: 10;
+      }
+      &-pagination {
+        left: 0;
+        right: 0;
+        bottom: 66px;
+        text-align: center;
+        transform: translate3d(0px, -50%, 0);
+        &-bullet {
+          display: inline-block;
+          margin: 0 4px;
+          background-color: #ddd !important;
+          opacity: 1;
+          transition: height 0.1s ease;
+          &-active {
+            width: 40px;
+            border-radius: 4px;
+          }
+        }
+        @media (max-width: 1200px) {
+          left: 18%;
+          margin-left: 0;
+        }
+      }
+      &-button {
+        &-prev {
+          top: 50%;
+          left: -74px;
+          width: 43px;
+          height: 43px;
+          margin-top: -41.5px;
+          background: url(/images/main/arrow04.png) no-repeat 0 10px;
           &:after {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #0f3654;
-            opacity: 0.9;
+            display: none;
+          }
+        }
+        &-next {
+          top: 50%;
+          left: auto;
+          right: -74px;
+          width: 43px;
+          height: 43px;
+          margin-top: -41.5px;
+          background: url(/images/main/arrow04.png) no-repeat 100% 10px;
+          &:after {
+            display: none;
           }
         }
       }
@@ -564,6 +510,10 @@ html {
   }
 
   &-notice {
+    position: relative;
+    top: -46px;
+    width: 1128px;
+    margin: 0 auto;
     padding-bottom: 10px;
     dl {
       position: relative;
@@ -605,7 +555,9 @@ html {
           color: #666;
           box-sizing: border-box;
           strong {
+            margin-left: 30px;
             color: #242424;
+            font-weight: 700;
           }
           @include letter-spacing(-30, 16);
           @include text-clamp(1);

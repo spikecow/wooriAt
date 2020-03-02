@@ -51,7 +51,7 @@ public class MainController {
 	public ModelAndView main(@RequestParam Map<String, Object> params,Device device) {
 		ModelAndView modelAndView = new ModelAndView();
 
-		Pageable salePageable = PageRequest.of(0, 3, new Sort(Sort.Direction.DESC, "bunDate"));
+		Pageable salePageable = PageRequest.of(0, 9, new Sort(Sort.Direction.DESC, "bunDate"));
 		Pageable sellPageable = PageRequest.of(0, 7, new Sort(Sort.Direction.DESC, "regDate").and(new Sort(Sort.Direction.DESC, "sellId")) );
 		Pageable newsPageable = PageRequest.of(0, 3, new Sort(Sort.Direction.DESC, "regDate"));
 
