@@ -416,10 +416,13 @@ html {
   display: inline-block;
   width: 352px;
   margin: 0 15.5px;
+  overflow: hidden;
 }
 
 .main-parcelout__slide-item-thumb {
   position: relative;
+  width: 352px;
+  height: 352px;
 }
 
 .main-parcelout__slide-item-thumb:after {

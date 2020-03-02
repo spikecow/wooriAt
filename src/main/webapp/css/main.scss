@@ -394,8 +394,11 @@ html {
         display: inline-block;
         width: 352px;
         margin: 0 15.5px;
+        overflow: hidden;
         &-thumb {
           position: relative;
+          width: 352px;
+          height: 352px;
           &:after {
             content: "";
             display: block;
