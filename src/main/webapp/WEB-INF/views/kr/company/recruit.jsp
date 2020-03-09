@@ -31,12 +31,14 @@
                     <li><a href="/company/location">오시는 길</a></li>
                 </ul>
             </div>
+    <!-- 상시 채용 삭제        
             <div class="dep3">
                 <ul>
                     <li><a href="/company/recruit" class="curr">채용안내</a></li>
                     <li><a href="/company/always_recruit">상시채용</a></li>
                 </ul>
             </div>
+    -->        
         </div>
     </div>
     <!-- //lnb area -->
